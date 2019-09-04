@@ -1,2 +1,4 @@
 Maths/*
-!Maths/*.tex
+!Maths/*/
+Maths/*/*
+!Maths/*/*.tex
