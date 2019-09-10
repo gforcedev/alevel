@@ -24,3 +24,10 @@
 # Passive Voice //TODO: needs more detail
  - Passive voice is used when we don't know who or what did the action.
    - 'ich bin gemobbt worden' translates to 'I have been bullied'.
+
+# Problems when translating
+These are the main things that make translation 'an art, not a science', and things to watch out for when translating either into German or into English, as they may cause difficulty
+ - Germanic phrasing - for example, in the sentence 'Ich lade musik herunter, weil das einfach ist', the 'das' would translate not to 'that', but to 'it'. Similarly, lots of the time when in German 'mann' would be used, it would be better translated into English as 'you'.
+ - Idioms - for example, 'was ist los' is difficult to translate without context, and wouldn't be direct - it might mean 'what is happening', for example.
+ - Prepositions - English and German often use different prepositions when describing things. Examples would be 'Ich denke an' ('I think ABOUT', not 'I think ON'), and 'Ich fahre mit dem bus' ('I travel ON the bus', not 'I travel With')
+ - Not knowing vocab - easier to deal with when translating into English than into German, as it's often possible to make an educated guess about what goes in the gap. Easiest solution is just learn all vocab inside out.
