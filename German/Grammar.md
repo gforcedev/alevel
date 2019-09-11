@@ -1,16 +1,17 @@
 # da with prepositions
- - When used with a preposition, "da" would roughly translate to "it" in the following manner:
+When used with a preposition, "da" would roughly translate to "it" in the following manner:
 
-    German|English
-    :---:|:---:
-    damit|with it
-    darauf|on it
-    daran|on it
-    etc.|etc.
+German|English
+:---:|:---:
+damit|with it
+darauf|on it
+daran|on it
+etc.|etc.
 
 # Fractions
- - Fractions work similarly to cardinal numbers, but they drop the trailing 'n' and add an 'l'.
-   - To say 'one in seven' or 'every seventh', you would say 'jeder siebte' (drop the trailing 'n' entirely and don't add anything)
+Fractions work similarly to cardinal numbers, but they drop the trailing 'n' and add an 'l'.
+
+To say 'one in seven' or 'every seventh', you would say 'jeder siebte' (drop the trailing 'n' entirely and don't add anything)
 
     German|English
     :---:|:---:
@@ -22,7 +23,7 @@
     etc.|etc.
 
 # Passive Voice
- - Used in sentences without a subject. To form it, use a form of "werden" with a past participle.
+Used in sentences without a subject. To form it, use a form of "werden" with a past participle.
 
     German|English
     :---:|:---:
@@ -37,5 +38,6 @@ These are the main things that make translation 'an art, not a science', and thi
  - Not knowing vocab - easier to deal with when translating into English than into German, as it's often possible to make an educated guess about what goes in the gap. Easiest solution is just learn all vocab inside out.
 
 # Saying decimal numbers
- - Decimal numbers are said with the number before the decimal, "Komma" (as in, the comma used instead of a decimal point in German), and then each number individually (or the whole number again).
- - For example, 23.45 could be "Drei-und-zwanzig-komma-vier-fünf" or "Drei-und-zwanzig-komma-fünf-und-vierzig"
+Decimal numbers are said with the number before the decimal, "Komma" (as in, the comma used instead of a decimal point in German), and then each number individually (or the whole number again).
+
+For example, 23.45 could be "Drei-und-zwanzig-komma-vier-fünf" or "Drei-und-zwanzig-komma-fünf-und-vierzig"
