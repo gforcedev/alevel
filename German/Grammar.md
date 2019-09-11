@@ -21,9 +21,13 @@
     zwanzigstel|twentieth
     etc.|etc.
 
-# Passive Voice //TODO: needs more detail
- - Passive voice is used when we don't know who or what did the action.
-   - 'ich bin gemobbt worden' translates to 'I have been bullied'.
+# Passive Voice
+ - Used in sentences without a subject. To form it, use a form of "werden" with a past participle.
+
+    German|English
+    :---:|:---:
+    Ich esse den Apfel|I am eating the apple
+    Der Apfel wird gegessen|The apple is being eaten
 
 # Problems when translating
 These are the main things that make translation 'an art, not a science', and things to watch out for when translating either into German or into English, as they may cause difficulty
@@ -31,3 +35,7 @@ These are the main things that make translation 'an art, not a science', and thi
  - Idioms - for example, 'was ist los' is difficult to translate without context, and wouldn't be direct - it might mean 'what is happening', for example.
  - Prepositions - English and German often use different prepositions when describing things. Examples would be 'Ich denke an' ('I think ABOUT', not 'I think ON'), and 'Ich fahre mit dem bus' ('I travel ON the bus', not 'I travel With')
  - Not knowing vocab - easier to deal with when translating into English than into German, as it's often possible to make an educated guess about what goes in the gap. Easiest solution is just learn all vocab inside out.
+
+# Saying decimal numbers
+ - Decimal numbers are said with the number before the decimal, "Komma" (as in, the comma used instead of a decimal point in German), and then each number individually (or the whole number again).
+ - For example, 23.45 could be "Drei-und-zwanzig-komma-vier-fünf" or "Drei-und-zwanzig-komma-fünf-und-vierzig"
