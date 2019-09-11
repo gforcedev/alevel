@@ -82,7 +82,7 @@ This means that the quadratic's graph crosses the x-axis at 2 points, and theref
 This means that the quadratic's graph touches the x-axis at only one point. If the quadratic factorised, it would be in the form $(ax+b)^2$. Setting the quadratic equal to 0 would only yield one solution.
 
 \subsection{No x-intercepts}
-This means that the quadratic's graph stays entirely above or below the x-axis, never touching it. Any quadratics with this property \b{cannot} factorise with integers, as this would imply it having either one or two x-intercepts. In fact, when set equal to 0, these quadratics have no real solutions.
+This means that the quadratic's graph stays above or below the x-axis at all times, never touching it at any point. Any quadratics that have this property definitely will not factorise with integers, as this would imply it having either one or two x-intercepts. In fact, when set equal to 0, these quadratics have no real solutions.
 
 \subsection{Has a minimum point}
 This means that the quadratic's graph is `happy' (looks like a smiley face, with the turning point as the lowest point in the graph, and the graph extending infinitely upwards). Quadratics in the form $ax^2+bx+c$ where $a>0$ have this property.
@@ -92,3 +92,16 @@ This means that the quadratic's graph is `unhappy' (looks like an upside-down sm
 
 \subsection{Y-intercept}
 The point at which the quadratic's graph crosses the y-axis. Equal to $c$ for quadratics in the form $ax^2+bx+c$.
+
+\section{Quadratics in disguise}
+Some quadratics may be disguised. For example, if there are other indices involved before the term gets squared. For example:
+\begin{IEEEeqnarray}{rCl?s}
+    x^4 + x^2 + 4 & = & 0 & // can be rewritten as
+    \nonumber \\
+    (x^2)^2 + (x^2) + 4 & = & 0 & // let $y = x^2$
+    \nonumber \\
+    y^2 + y + 4 & = & 0 & // and solve normally
+\end{IEEEeqnarray}
+Don't forget, after solving for $y$, to then sub $x^2$ back in and solve for $x$ 
+
+This can also happen with fractions ($x^{\frac{2}{3}}+x^{\frac{1}{3}}+3$), or addition when $x$ is used in the exponent ($4^{2x}+4^{x+1}+6$). In each case, find something to substitute so that you're left with a term squared, followed by that same linear term, followed by constant. Then it should be fine to solve, for the substituted variable, substitute $x$ back in, and solve for $x$.
