@@ -1,7 +1,31 @@
 \section{Line Graphs}
 \subsection{Working out a line between two points}
-First use $m=\frac{\delta y}{\delta x}$, substituting in the coordinates of the two points to find $m$. Then, substitute this value of $m$, as well as the coordinates from one of the points, into $y=mx+c$. You can solve to find c, and then you have your line equation.
+First use $m=\frac{\Delta y}{\Delta x}$, substituting in the coordinates of the two points to find $m$. Then, substitute this value of $m$, as well as the coordinates from one of the points, into $y=mx+c$. You can solve to find c, and then you have your line equation.
 \subsection{Are they parallel?}
 If they have the same gradient, then yes.
 \subsection{Are they perpendicular?}
 If their gradients multiply to -1, then yes.
+
+\section{Lengths and Areas}
+To find the distance between two points on a cartesian grid, we can create a right angled triangle and thereby use pythagoras to find the distance. That is to say, for the coordinates $A (x, y)$, and $B (x_1, y_1)$, then the distance between them is equal to $\sqrt{(x-x_1)^2+(y-y_1)^2}$.
+
+\adjustbox{margin=1cm}{
+    \pgfplotsset{}
+    \begin{tikzpicture}[baseline]
+        \begin{axis}[
+            axis y line=center,
+            axis x line=middle,
+            axis equal,
+            grid=both,
+            xmax=5,xmin=-5,
+            ymin=-5,ymax=5,
+            xlabel=$x$,ylabel=$y$,
+            width=10cm,
+            anchor=center,
+            ]
+            \addplot coordinates {(1,4) (5,4)};
+            \addplot coordinates {(1,4) (1,0)};
+            \addplot coordinates {(1,0) (5,4)};
+        \end{axis}
+    \end{tikzpicture}
+}
