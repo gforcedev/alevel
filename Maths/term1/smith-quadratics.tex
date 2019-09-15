@@ -103,7 +103,7 @@ Some quadratics may be disguised. For example, if there are other indices involv
     \nonumber \\
     y^2 + y + 4 & = & 0 & // and solve normally
 \end{IEEEeqnarray}
-Don't forget, after solving for $y$, to then sub $x^2$ back in and solve for $x$ 
+Don't forget, after solving for $y$, to then sub $x^2$ back in and solve for $x$
 
 This can also happen with fractions ($x^{\frac{2}{3}}+x^{\frac{1}{3}}+3$), or addition when $x$ is used in the exponent ($4^{2x}+4^{x+1}+6$). In each case, find something to substitute so that you're left with a term squared, followed by that same linear term, followed by constant. Then it should be fine to solve, for the substituted variable, substitute $x$ back in, and solve for $x$.
 
@@ -116,3 +116,35 @@ In the quadratic formula $x=\frac{-b\pm \sqrt{b^2-4ac}}{2a}$, the part under the
     \item If $b^2-4ac$ is a square number, then the quadratic factorises with integers.
 \end{itemize}
 
+\section{Quadratic inequalities}
+Quadratic inequalities can be thought of as finding part of a graph. For example, solving the inequality $x^2-2<0$, can be thought of as finding all of the x-values for which the graph $y=x^2-2$ goes below the $x$-axis. As such, the correct way to solve a quadratic inequality is to get everything onto one side of the inequality sign, and then you can find the roots (called \b{critical values} for inequalities), and work out which part of the graph you're after.
+
+\section{Quadratic simultaneous equations}
+Quadratic simultaneous equations can be solved with substitution, similar to normal inequalities. However, they can also once again be thought of in terms of the relevant graphs. For example, solving the simultaneous equations:
+\begin{IEEEeqnarray}{rCl}
+    x^2 + y^2 & = & 25
+    \nonumber\\
+    y & = & 2x + 4
+\end{IEEEeqnarray}
+can be thought of as finding where their graphs intersect:
+\adjustbox{margin=1cm}{
+    \pgfplotsset{}
+    \begin{tikzpicture}[baseline]
+        \begin{axis}[
+            axis y line=center,
+            axis x line=middle,
+            axis equal,
+            grid=both,
+            xmax=10,xmin=-10,
+            ymin=-10,ymax=10,
+            xlabel=$x$,ylabel=$y$,
+            width=15cm,
+            anchor=center,
+            ]
+            \draw (axis cs:0,0) circle [black, radius=5];
+            \draw (axis cs:0.488,4.976) circle [blue, radius=0.5];
+            \draw (axis cs:-3.688,-3.376) circle [blue, radius=0.5];
+            \addplot[mark=none] {2*x+4};
+        \end{axis}
+    \end{tikzpicture}
+}
