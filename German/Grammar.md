@@ -41,3 +41,6 @@ These are the main things that make translation 'an art, not a science', and thi
 Decimal numbers are said with the number before the decimal, "Komma" (as in, the comma used instead of a decimal point in German), and then each number individually (or the whole number again).
 
 For example, 23.45 could be "Drei-und-zwanzig-komma-vier-fünf" or "Drei-und-zwanzig-komma-fünf-und-vierzig"
+
+# People as 'the'
+Colloquially, people can sometimes be referred to using the definite article. For example, "was meinen Vater betrifft, den finde ich..." would translate to "when it comes to my father, I find **him**"
