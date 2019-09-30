@@ -1,0 +1,23 @@
+\documentclass[20pt]{extarticle}
+
+\usepackage{chemfig}
+\usepackage[version=4]{mhchem}
+\usepackage{IEEEtrantools}
+
+% inkscape figures
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+% more space between IEEEeqnarray lines
+\begin{document}{\setlength{\IEEEnormaljot}{15pt}
+% \include{term1/forrest-electron-configuration}
+% \include{term1/forrest-ionisation-energy}
+\include{term1/forrest-ionic-bonding}
+\end{document}
