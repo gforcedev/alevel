@@ -2,3 +2,8 @@ Maths/*
 !Maths/*/
 Maths/*/*
 !Maths/*/*.tex
+
+Chemistry/*
+!Chemistry/*/
+Chemistry/*/*
+!Chemistry/*/*.tex
