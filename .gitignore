@@ -1,9 +1,11 @@
 Maths/*
 !Maths/*/
 Maths/*/*
+!Maths/figures/*
 !Maths/*/*.tex
 
 Chemistry/*
 !Chemistry/*/
 Chemistry/*/*
+!Chemistry/figures/*
 !Chemistry/*/*.tex
