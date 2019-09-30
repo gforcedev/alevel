@@ -1,10 +1,12 @@
 Maths/*
+!Maths/master.tex
 !Maths/*/
 Maths/*/*
 !Maths/figures/*
 !Maths/*/*.tex
 
 Chemistry/*
+!Chemistry/master.tex
 !Chemistry/*/
 Chemistry/*/*
 !Chemistry/figures/*
