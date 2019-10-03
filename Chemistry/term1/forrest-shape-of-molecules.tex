@@ -1,0 +1,82 @@
+\section{Shapes of molecules and ions}
+\subsection{Electron repulsion theory}
+As electrons are all negatively charged, electron pairs will repel each other. This means that bonding electron pairs will arrange themselves as far apart as possible.
+
+\subsection{Drawing bonds in 3 dimensions}
+When drawing bonds, different symbols can be used to represent bonds. A solid (\chemfig{-}) means that the bond is in line with the plane of the paper. A wedge (\chemfig{>}) means that the bond is going forward, out from the paper towards the reader. A dashed wedge (\chemfig{>:}) means that the bond is going into the paper, away from the reader.
+
+\subsection{Shapes of molecules}
+\subsubsection{Linear}
+If a molecule has two bonding pairs, they will repel to be as far away from each other as possible. This is called a \textbf{linear} shape, and has angles of \textbf{180\textdegree}. An example would be beryllium chloride, and could be drawn like this:
+\begin{center}
+	{\chemfig{Cl-Be-Cl}}
+\end{center}
+
+\subsubsection{Trigonal planar}
+If a molecule has three bonding pairs, then they will form a triangle on one plane, so that they can all be as far away as possible, This is called a \textbf{trigonal planar} shape, and has angles of \textbf{120\textdegree}. An example would be aluminium chloride and could be drawn like this: 
+\begin{center}
+	\chemfig{@{c}Al (-[:30]@{r}Cl) (-[:150]@{l}Cl) (-[:270]@{d}Cl)}
+	\arclabel{1cm}{d}{c}{r}{\footnotesize 120\textdegree}
+\end{center}
+\subsubsection{Tetrahedral}
+If a molecule has four bonding pairs, then they will move as far away from each other in three dimensions. The shape they form is known as \textbf{tetrahedral}, and has angles of \textbf{109.5\textdegree}. An example would be methane, which can be drawn like this:
+\begin{center}
+	\chemfig{@{c}C (-[:90]@{u}H) (<:[:-20]@{r}H) (<[:-80]@{d}H) (-[:199.5]@{l}H)}
+	\arclabel{1.5cm}{d}{c}{r}{\footnotesize 109.5\textdegree}
+\end{center}
+
+\subsubsection{Trigonal bipyramidal}
+If a molecule has five bonding pairs, then they will move as far away from each other in three dimensions forming a \textbf{trigonal bipyramidal} shape which has angles of \textbf{90\textdegree{} and 120\textdegree}. An example would be phosphorus (v) chloride, which can be drawn like this:
+
+\begin{center}
+	\chemfig{@{s}S (-[:90]@{u}F) (-[:0]@{r}F) (-[:-90]@{d}F) (<[:-135]@{ld}F) (<:[:135]@{lu}F)}
+	\arclabel{1.5cm}{r}{s}{u}{\footnotesize 90\textdegree}
+	\arclabel{1.5cm}{lu}{s}{ld}{\footnotesize 120\textdegree}
+\end{center}
+
+\subsubsection{Octahedral}
+If a molecule has six bonding pairs, then they will move as far away from each other in three dimensions forming an \textbf{octahedral} shape which has angles of \textbf{90\textdegree}. The shape is called octahedral because that is the shape that would be formed if the ends of all the bonds were considered vertices of the shape. An example would be sulphur hexafluoride, and can be drawn like this:
+\begin{center}
+	\chemfig{@{s}S (-[:90]@{u}F) (-[:-90]@{d}F) (<:[:35]@{ru}F) (<:[:145]@{lu}F) (<[:-35]@{rd}F) (<[:-145]@{ld}F)}
+	\arclabel{1.5cm}{ru}{s}{u}{\footnotesize 90\textdegree}
+\end{center}
+
+\subsection{Molecules with lone pairs}
+Lone pairs are more electron-dense than bonding pairs, and so repel with more force, pushing more and making the molecules into irregular shapes. To determine this shape, work out how many pairs (bonded or lone) the molecule has in total. The molecule's shape will be based of the corresponding regular shape, but changed based on how many of the pairs are lone pairs.
+
+\subsubsection{Lone pair shapes with four total pairs}
+If there are four total pairs, the molecule's shape will be based on the tetrahedral shape, but with the bond angles decreased by 2.5 degrees for every lone pair. These shapes are called \textbf{pyramidal}, or sometimes trigonal pyramidal (with one lone pair), and \textbf{angular} (with two lone pairs). Examples would be ammonia and water.
+
+\begin{center}
+	\chemfig{@{n}\lewis{2:,N} (<:[:-15]@{r}H) (<[:-85]@{d}H) (-[:-170]@{l}H)}
+	\arclabel{1.5cm}{d}{n}{r}{\footnotesize 107\textdegree}
+\end{center}
+\begin{center}
+	\chemfig{@{o}\lewis{1:3:,O} (-[:-37.75]@{r}H) (-[:-142.25]@{l}H)}
+	\arclabel{1cm}{l}{o}{r}{\footnotesize 104.5\textdegree}
+\end{center}
+
+\subsubsection{Lone pair shapes with six total pairs}
+If there are two lone pairs and six total pairs, then the lone pairs will repel more and end up as far away from each other. This forms what is called a \textbf{square planar} shape, for example found in xenon tetrafluoride:
+
+\begin{center}
+	\chemfig{@{xe}\lewis{2:6:,Xe} (<:[1]@{ru}F) (<:[3]@{lu}F) (<[5]@{ld}F) (<[7]@{ld}F)}
+	\arclabel{1.5cm}{rd}{xe}{ru}{\footnotesize 90\textdegree}
+\end{center}
+
+\subsection{Ions}
+Ions work in the same way as molecules. For example, nitrate ions have a tetrahedral shape.
+
+\subsection{Double bonds}
+Double bonds are treated as bonded regions. For example, in carbon dioxide then there are two double bonds, and so two bonded regions, making the shape linear:
+
+\begin{center}
+	\chemfig{O=C=O}
+\end{center}
+
+Bonded regions are treated in exactly the same way as bonded pairs. So, by this logic a sulphate (vi) ion has a tetrahedral shape:
+
+\begin{center}
+	\chemfig{@{s}S (=[2]@{u}O) (=[:199.5]@{l}O) (<[7]@{d}\ce{O-}) (<:[:-10]@{r}\ce{O-})}
+	\arclabel{1.5cm}{r}{s}{u}{\footnotesize 109.5\textdegree}
+\end{center}

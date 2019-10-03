@@ -3,6 +3,7 @@
 \usepackage{chemfig}
 \usepackage[version=4]{mhchem}
 \usepackage{IEEEtrantools}
+\usepackage{textcomp}
 
 % inkscape figures
 \usepackage{import}
@@ -10,6 +11,23 @@
 \usepackage{pdfpages}
 \usepackage{transparent}
 
+% labelling bonds and angles
+\newcommand\namebond[5][-1pt]{\chemmove{\path(#2)--(#3)node[midway,#4,yshift=#1,black!60]{#5};}}
+\newcommand\arcbetweennodes[3]{%
+    \pgfmathanglebetweenpoints{\pgfpointanchor{#1}{center}}{\pgfpointanchor{#2}{center}}%
+    \let#3\pgfmathresult}
+\newcommand\arclabel[6][red,-stealth,shorten <=1pt,shorten >=1pt]{%
+    \chemmove{%
+        \arcbetweennodes{#4}{#3}\anglestart
+        \arcbetweennodes{#4}{#5}\angleend
+        \ifdim\anglestart pt>\angleend pt \pgfmathsetmacro\anglestart{\anglestart-360}\fi
+        \draw[#1]([shift=(\anglestart:#2)]#4)arc[start angle=\anglestart,end angle=\angleend,radius=#2];%
+        \pgfmathsetmacro\anglestart{(\anglestart+\angleend)/2}%
+        \node[shift=(\anglestart:#2+1pt)#4,anchor=\anglestart+180,inner sep=0pt,outer sep=0pt]at(#4){#6};%
+    }%
+}
+
+% for inkscape-figures
 \newcommand{\incfig}[1]{%
     \def\svgwidth{\columnwidth}
     \import{./figures/}{#1.pdf_tex}
@@ -19,5 +37,7 @@
 \begin{document}{\setlength{\IEEEnormaljot}{15pt}
 % \include{term1/forrest-electron-configuration}
 % \include{term1/forrest-ionisation-energy}
-\include{term1/forrest-ionic-bonding}
+% \include{term1/forrest-ionic-bonding}
+% \include{term1/forrest-covalent-bonding}
+\include{term1/forrest-shape-of-molecules}
 \end{document}

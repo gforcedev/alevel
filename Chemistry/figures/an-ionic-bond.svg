@@ -74,9 +74,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="401.28083"
-     inkscape:cy="262.14181"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="448.51327"
+     inkscape:cy="210.70301"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -84,10 +84,10 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="3000"
-     inkscape:window-height="2000"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="1470"
+     inkscape:window-height="1890"
+     inkscape:window-x="1510"
+     inkscape:window-y="90"
      inkscape:window-maximized="0"
      inkscape:snap-grids="false"
      inkscape:snap-nodes="false">
@@ -632,7 +632,7 @@
          id="tspan989-65"
          x="8.3157539"
          y="282.20975"
-         style="stroke-width:0.13054971">Cl 1s$^2$ 2s$^2$ 2p$^6$ 3s^2 3p^5</tspan></text>
+         style="stroke-width:0.13054971">Cl 1s$^2$ 2s$^2$ 2p$^6$ 3s$^2$ 3p$^5$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -713,7 +713,7 @@
          id="tspan989-65-6"
          x="134.99214"
          y="280.84918"
-         style="stroke-width:0.13054971">Cl 1s$^2$ 2s$^2$ 2p$^6$ 3s^2 3p^6</tspan></text>
+         style="stroke-width:0.13054971">Cl 1s$^2$ 2s$^2$ 2p$^6$ 3s$^2$ 3p$^6$</tspan></text>
     <g
        id="g881-4-3"
        transform="rotate(-45,115.36354,82.713643)">
