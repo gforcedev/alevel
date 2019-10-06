@@ -1,0 +1,15 @@
+\section{Polynomials}
+A polynomial is a finite expression with positive whole number indices.
+\subsection{Long division of polynomials}
+This can be used to see what the remainder is when a polynomial is divided by $(x+p)$ where $p$ is a constant term. For example, to divide $x^3+2x^2-17x+6$ by $x+3$, you could set it out something like this:
+
+\polylongdiv{x^3+2x^2-17x+6}{x+3}
+
+The part left at the top is called the \textbf{quotient}, while the linear term left at the end is the \textbf{remainder}. This is really telling us that $x^3+2x^2-17x+6=(x+3)(x^2-x-14)+48$.
+
+\subsubsection{Missing terms in long division}
+If a term is missing, it needs to be replaced with a $+0$ times the missing term so that the method still works.
+
+\subsection{The factor theorem}
+The factor theorem states that for any polynomial $f(x)$, the statement ``$(x-a)$ is a factor of $f(x)$'' is equivalent to saying that ``$f(a)=0$''. This means that you can use the factor theorem to prove that something is a factor of a polynomial by substituting in $a$ in $(x-a)$ and showing that the output is equal to $0$.
+

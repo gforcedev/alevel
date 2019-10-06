@@ -1,0 +1,29 @@
+\section{Circles}
+\subsection{Equations of circles}
+\subsubsection{Circles with centres at the origin}
+For any circle with centre $(0, 0)$ and radius $r$, the equation of the circle is $x^2+y^2=r^2$.
+\subsubsection{Circles not centered at the origin}
+If the circles are not centered at the origin, the rules for transforming graphs apply. This means that for a circle centre $(a, b)$, radius $r$, the equation would be $(x-a)^2+(x-b)^2=r^2$
+
+\subsection{Common types of question}
+\subsubsection{Finding centre and radius}
+This is a common type of question. You could be given for example the centre and a point the circle passes through, or perhaps the equation in its expanded form. The first of these isn't too difficult, as the radius can be found using Pythagoras' theorem. For the latter, the best thing to do is to complete the square on the $x$ annd $y$ terms separately, before moving everything else to the other side of the equation. For example:
+\begin{IEEEeqnarray}{rCls}
+	x^2+y^2-14x+16y-12 & = & 0
+	\nonumber\\
+	x^2-14x+y^2+16y-12 & = & 0 & // Group related terms
+	\nonumber\\
+	(x+7)^2-49+(y+8)^2-64-12 & = & 0 & // Complete the square
+	\nonumber\\
+	(x+7)^2(y+8)^2 & = & 125 & // Move linear terms to RHS
+\end{IEEEeqnarray}
+
+\subsection{Intersections with straight lines}
+If a line touches a circle, then you can solve them as simultaneous equations to work out where they intersect. If a line is a tangent to the circle, the simultaneous equations will only have one solution, and if they don't intersect at all, there won't be any solutions.
+\subsubsection{A common lines and circles exam question}
+Often, you'll be given equation of a circle, and the y-intercept of a line tangent to that circle. In this case, you can find the equation of the line by substituting in that $y=mc+c$ (you know $c$), and forming a quadratic. Next, because you know that the line is a tangent, you know that the quadratic must have one solution, and you can use the discriminant to create another quadratic in terms of $m$ and solve it before reconstructing the equation of the line.
+
+\subsection{Circumcircles}
+A circumcircle is a circle that touches all three corners of a triangle. These can be drawn for any triangle by constructing perpendicular bisectors between two of the three edges. The point at which they meet is the centre of this circle (called a \textbf{circumcentre}).
+\subsection{Proving that one of the lines is a diameter}
+For a right-angled triangle, then the hypotenuse will be the diameter of its circumcircle. You can use the circle theorem that the angle at the circumference of a semicircle is 90\textdegree{} to prove this.

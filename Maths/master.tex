@@ -7,12 +7,32 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
 \usepackage{adjustbox}
+\usepackage{polynom}
+\usepackage{amsmath}
+
+% inkscape figures
+\usepackage{import}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+
+% for inkscape-figures
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
 
 % more space between IEEEeqnarray lines
 \begin{document}{\setlength{\IEEEnormaljot}{15pt}
-	\include{holidays/holidays}
-	\include{term1/smith-quadratics}
-	\include{term1/algebra-tricks}
-    \include{term1/mayor-line-graphs}
-	\include{term1/question-words}
+	% \include{holidays/holidays}
+	% \include{term1/smith-quadratics}
+	% \include{term1/algebra-tricks}
+	% \include{term1/mayor-line-graphs}
+	% \include{term1/mayor-circles}
+	% \include{term1/mayor-polynomials}
+	% \include{term1/mayor-proof}
+	% \include{term1/smith-graphs}
+	\include{term1/smith-trigonometry}
+	% \include{term1/question-words}
 \end{document}
