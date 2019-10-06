@@ -15,11 +15,15 @@ Dot and cross diagrams can be used to help us understand covalent bonds.
 \end{figure}
 \subsubsection{When drawing molecules}
 Covalent bonds can be represented by drawing solid lines between the atoms' symbols. The number of lines represents how many pairs of electrons are shared. Each line is one shared pair of electrons. For example, ethene can be drawn like this:\\
-\chemfig{C (-[3]H) (-[5]H) = C (-[1]H) (-[7]H)}
+\begin{center}
+	\chemfig{C (-[3]H) (-[5]H) = C (-[1]H) (-[7]H)}
+\end{center}
 
 \subsection{Different kinds of electron pair}
 A pair of electrons involved in a covalent bond is called a \textbf{bonding pair}. A pair of electrons not involved in a covalent bond (but in a covalently bonded molecule) is called a \textbf{lone pair}, and may be represented by a double dot when drawing molecules. For example a diagram of, $\ce{NH3}$ might be drawn something like this:
-\chemfig{\lewis{2:,N} (-[4]H) (-[6]H) (-[8]H)}
+\begin{center}
+	\chemfig{\lewis{2:,N} (-[4]H) (-[6]H) (-[8]H)}
+\end{center}
 
 \subsection{Properties of covalently bonded substances}
 Covalent substances don't conduct electricity because they have no mobile ions or electrons.
@@ -38,4 +42,7 @@ The phosphorus has the configuration [Ne]3s$^2$3p$^3$, with the 3s electrons bei
 
 \subsection{Dative covalent bonds (or coordinate bonds)}
 Dative covalent bonds are slightly different from covalent bonds in their formation. The shared electrons making up the bonding pair are both from one donor atom, rather than one being from each of the two that are sharing. For example, $\ce{NH4+}$ ions are formed by the lone pair from an $\ce{NH3}$ molecule being donated to an $\ce{H^+}$ ion. This can be displayed as an arrow, like this:\\
-\[\chemfig{N (-[0,,,,->]H^+) (-[2]H) (-[4]H) (-[6]H)}\]$^+$
+\begin{center}
+	\chemfig{N (-[@{r,2}0,,,,->]H^+) (-[2]H) (-[@{l,1.6}4]H) (-[6]H)}
+	\makepolymerdelims[subscript={},superscript={$+$}]{70pt}{l}{r}
+\end{center}
