@@ -89,3 +89,33 @@ Accusative|Den/Einen|Die/Eine|Das/Ein|Die/Keine
 Genitive|Des/Eines|Der/Einer|Des/Eines|Der/Keiner
 Dative|Dem/Einem|Der/Einer|Dem/Einem|Den/Keinen
 
+# Adjective endings
+Adjective endings are different depending on whether the definite, indefinite, or no article was used before them. This is so that the gender of the word is apparent (most of the time). The tables can be thought of using the image of a 'meat cleaver' - highlighted with the bold ones in this table.
+
+## Adjective endings for the definite article
+Case|Masculine|Feminine|Neuter|Plural/None
+---|---|---|---|---|---
+Nominative|**e**|**e**|**e**|en
+Accusative|en|**e**|**e**|en
+Genitive|en|en|en|en
+Dative|en|en|en|en
+
+For the indefinite, then all of the 'en' endings are the same as the definite, but the masculine and neuter 'e's change so that they reflect the gender (otherwise you wouldn't be able to tell the gender of a word).
+
+## Adjective endings for the definite article
+Case|Masculine|Feminine|Neuter|Plural/None
+---|---|---|---|---|---
+Nominative|**er**|**e**|**es**|en
+Accusative|en|**e**|**es**|en
+Genitive|en|en|en|en
+Dative|en|en|en|en
+
+When there's no article used, the endings are all different, in order to reflect the verb used - the table mostly mirrors the last parts of the definite articles but with the 'es' from 'des' changed to being 'en'.
+
+## Adjective endings for the definite article
+Case|Masculine|Feminine|Neuter|Plural/None
+---|---|---|---|---|---
+Nominative|er|e|es|e
+Accusative|en|e|es|e
+Genitive|en|er|en|er
+Dative|em|er|em|en
