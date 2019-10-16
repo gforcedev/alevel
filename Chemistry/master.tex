@@ -4,6 +4,8 @@
 \usepackage{chemmacros}
 \chemsetup{modules={polymers}}
 \usepackage[version=4]{mhchem}
+\usepackage{graphicx}
+\usepackage{hyperref}
 \usepackage{IEEEtrantools}
 \usepackage{textcomp}
 
@@ -12,6 +14,8 @@
 \usepackage{xifthen}
 \usepackage{pdfpages}
 \usepackage{transparent}
+
+\graphicspath{ {./figures/} }
 
 % labelling bonds and angles
 \newcommand\namebond[5][-1pt]{\chemmove{\path(#2)--(#3)node[midway,#4,yshift=#1,black!60]{#5};}}
@@ -42,5 +46,6 @@
 % \include{term1/forrest-ionic-bonding}
 % \include{term1/forrest-covalent-bonding}
 % \include{term1/forrest-shape-of-molecules}
-\include{term1/forrest-electronegativity-and-polarity}
+% \include{term1/forrest-electronegativity-and-polarity}
+\include{term1/forrest-intermolecular-forces}
 \end{document}
