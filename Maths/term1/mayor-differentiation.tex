@@ -1,0 +1,49 @@
+\section{Differentiation}
+Differention is finding the derivative, or gradient function, of a curve. This can be expressed in a couple of ways. If the function is given as, for example $y=x^2+2x+2$, then the derivative can be expressed as $\frac{dy}{dx}$. If the function is given in the form $f(x)=x^2+2x^2$, then the derivative would be expressed as $f'(x)$. These mean the same thing.
+
+\subsection{Differentiation from first principles}
+The gradient of a curve can be thought of as the gradient of a line between two points on it, when those points are infinitely close together. If we think of these two points as $(x, f(x))$ and $(x+h, f(x+h))$, then the gradient would be $\lim_{h \to 0}\frac{f(x+h)-f(x)}{h}$.
+\begin{figure}[ht]
+    \centering
+    \incfig{differentiation-from-first-principles}
+    \caption{Differentiation from first principles}
+    \label{fig:differentiation-from-first-principles}
+\end{figure}
+
+\subsection{Example differentiation from first principles}
+As an example, a differentiation of $ax^2$.
+\begin{IEEEeqnarray}{rCl}
+	f'(x) & = & \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} \frac{a(x+h)^2-ax^2}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} \frac{a(x^2+h^2+2hx)-ax^2}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} \frac{ax^2+ah^2+2ahx-ax^2}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} \frac{ah^2+2ahx}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} ah+2ax
+	\nonumber\\
+	f'(x) & = & 2ax
+\end{IEEEeqnarray}
+
+\subsection{Differentiating any polynomial}
+Since you can differentiate any polynomial by differentiating each term in turn, we need to know how to differentiate $ax^n$.
+\begin{IEEEeqnarray}{rCl}
+	f'(x) & = & \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} \frac{a(x+h)^n-ax^n}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} \frac{a(x^n+nx^{n-1}+O(h^2)+O(h^3)...)-ax^n}{h}
+	\nonumber\\
+	f'(x) & = & \lim_{h \to 0} a(nx^{n-1}+O(h)+O(h^2)...)
+	\nonumber\\
+	f'(x) & = & nax^{n-1}
+\end{IEEEeqnarray}
+
+Or, in other words, to differentiate any term of any polynomial, bring the exponent of $x$ down in front of the term, and subtract 1 from the exponent.
+
+\subsection{Uses of differentiation}
+\subsubsection{Finding turning points}
+You can set the gradient function equal to 0 to find $x$-values for the turning points of a graph.
