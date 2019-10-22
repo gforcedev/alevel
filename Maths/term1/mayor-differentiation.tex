@@ -45,5 +45,50 @@ Since you can differentiate any polynomial by differentiating each term in turn,
 Or, in other words, to differentiate any term of any polynomial, bring the exponent of $x$ down in front of the term, and subtract 1 from the exponent.
 
 \subsection{Uses of differentiation}
-\subsubsection{Finding turning points}
-You can set the gradient function equal to 0 to find $x$-values for the turning points of a graph.
+\subsubsection{Tangents and normals to curves}
+If we know the gradient at any point on a curve, we can find the equation for the normal or tangent at that point by substituting $x$, $y$, and $m$ into $y=mx+c$.
+
+\subsubsection{Saying whether a function is increasing or decreasing}
+We say a function is increasing on an interval [$a$, $b$] if $f'(x)\geq 0$ for $a<x<b$.
+
+We say a function is decreasing on an interval [$a$, $b$] if $f'(x)\leq 0$ for $a<x<b$.
+
+We say a function is strictly increasing or decreasing if it is only one of increasing or decreasing for all values of $x$.
+\subsubsection{Finding and categorising stationary points}
+You can set the gradient function equal to 0 to find $x$-values for the turning points of a graph. To find out whether the stationary point is a local maximum point, local minimum point, or point of inflection you can differentiate again to get the second derivative, which can also be expressed as $\frac{d^2y}{dx^2}$, or $f''(x)$. When the $x$-coordinate of the stationary point is substituted into the second derivative, if the output is greater than 0 then the stationary point is a minimum. If the output is less than 0 then it's a maximum. If the output is equal to 0, then we cannot be sure and so must consider points either side of the stationary point to see what type it is.
+\begin{table}[h]
+	\center
+\begin{tabular}{lll}
+f'(x-h)  & f'(x+h)  & Type of point \\
+Positive & Negative & Maximum       \\
+Negative & Positive & Minimum       \\
+Negative & Negative & Inflection    \\
+Positive & Positive & Inflection
+\end{tabular}
+\end{table}
+
+\subsection{Sketching gradient functions}
+We can sketch gradient functions by considering the properties of the original graph. Certain things in the original curve will correspond to certain features of its gradient function. These are:
+\begin{table}[h]
+	\center
+\begin{tabular}{lll}
+Original curve       & Gradient Function    \\
+Positive gradient    & Above the $x$-axis   \\
+Negative gradient    & Below the $x$-axis   \\
+Min or Max point     & Crosses the $x$-axis \\
+Point of inflection  & Touches the $x$-axis \\
+Vertical asymptote   & Vertical asymptote   \\
+Horizontal asymptote & Asymptote at $y=0$   \\
+\end{tabular}
+\end{table}
+This means we can sketch a curve's gradient function without knowing the equation of the curve itself, only needing a sketch of it.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{an-example-sketch-of-a-gradient-function}
+    \caption{An example sketch of a gradient function}
+    \label{fig:an-example-sketch-of-a-gradient-function}
+\end{figure}
+
+\subsection{Modelling with differentiation}
+If we know one variable as a function of another (for example, the amount of water in a container at a given time as $f(t)$), then we can differentiate it to get the rate of change of whatever we're measuring. This means that, by using both the first and second derivatives, we can find what the maximum or minimum values are and prove that this is the case.

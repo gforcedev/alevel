@@ -1,6 +1,6 @@
 %% Creator: Inkscape inkscape 0.92.4, www.inkscape.org
 %% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
-%% Accompanies image file 'differentiation-from-first-principles.pdf' (pdf, eps, ps)
+%% Accompanies image file 'an-example-sketch-of-a-gradient-function.pdf' (pdf, eps, ps)
 %%
 %% To include the image in your LaTeX document, write
 %%   \input{<filename>.pdf_tex}
@@ -53,15 +53,11 @@
   \begin{picture}(1,0.5)%
     \lineheight{1}%
     \setlength\tabcolsep{0pt}%
-    \put(0,0){\includegraphics[width=\unitlength,page=1]{differentiation-from-first-principles.pdf}}%
-    \put(0.45211843,0.1548214){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}A\end{tabular}}}}%
-    \put(0.75940081,0.3332023){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}B\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=2]{differentiation-from-first-principles.pdf}}%
-    \put(0.45480553,0.03774694){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x$\end{tabular}}}}%
-    \put(0.75,0.03108342){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$x+h$\end{tabular}}}}%
-    \put(0.16991995,0.13479932){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f(x)$\end{tabular}}}}%
-    \put(0.10222604,0.34822833){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$f(x+h)$\end{tabular}}}}%
-    \put(0,0){\includegraphics[width=\unitlength,page=3]{differentiation-from-first-principles.pdf}}%
-    \put(0.62127775,0.13640671){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}$h$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{an-example-sketch-of-a-gradient-function.pdf}}%
+    \put(0.05480608,0.10659294){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Turning point at $x=1$\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{an-example-sketch-of-a-gradient-function.pdf}}%
+    \put(0.05217527,0.0554849){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Horizontal Asymptote\end{tabular}}}}%
+    \put(0.55119127,0.10063705){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Cuts at $(1, 0)$\end{tabular}}}}%
+    \put(0.55252571,0.05852648){\color[rgb]{0,0,0}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}Asymptote at y=0\end{tabular}}}}%
   \end{picture}%
 \endgroup%
