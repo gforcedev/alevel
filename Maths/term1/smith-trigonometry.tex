@@ -29,7 +29,7 @@ This can also be written as:
 
 It can be used when you have a triangle with one opposite pair labelled (eg $A$ and $a$), as well as one other value.
 
-\subsection{The ambiguous case of the sin rule}
+\subsection{Ambiguous case of the sin rule}
 The ambiguous case of the sin rule occurs in triangles when you've been given an angle and two sides. This is because, due to the nature of a sine graph, there are two possible values that could work. A calculator will give one of the values, but you may need to check whether the question asked for an acute or obtuse angle, and possibly use the symmetry of a sine graph to find the value you're really looking for.
 \begin{figure}[ht]
     \centering
@@ -37,3 +37,64 @@ The ambiguous case of the sin rule occurs in triangles when you've been given an
     \caption{The ambiguous case of the sine rule. Either of the dashed lines could be correct and so there are two possible angles.}
     \label{fig:the-ambiguous-case-of-the-sine-rule}
 \end{figure}
+
+\subsection{Area of a triangle}
+The area of a triangle is $\frac{1}{2}ab\sin{C}$.
+\begin{figure}[ht]
+    \centering
+    \incfig{area-of-a-triangle}
+    \caption{area of a triangle}
+    \label{fig:Area-of-a-triangle}
+\end{figure}
+
+\subsection{The trig graphs}
+These are useful to be able to sketch from memory.
+\begin{figure}[ht]
+    \centering
+    \incfig{the-trig-graphs}
+    \caption{The trig graphs. Red lines every 90\textdegree}
+    \label{fig:the-trig-graphs}
+\end{figure}
+
+\subsection{Solving trig equations}
+Questions with trig equations will be given with a range for $\theta$. Calculators will only give the principal value. This is between -90 and 90 for sin, between 0 and 180 for cos, and between -90 and 90 for tan. A sketch of the graph can then be used to work out the other values in the given range that satisfy the equation.
+\subsubsection{More complex trig equations}
+When given a transformation of $\theta$, for example $\sin{2\theta+20}$ rather than just $\sin{\theta}$, then the best way to solve is to assign another variable to whatever's in the function, so in this case let $y=2\theta+20$, and then construct a new range by applying the same transformation to the given range. So if the range was $0\leq\theta\leq360$, then the new range would be $2(0)+20\leq x\leq 2(360)+20$. Then you can solve for $x$ in this new range, before going back to $\theta$ right at the end.
+
+\subsection{Exact trig values}
+The values of sin, cos, and tan of 0\textdegree, 30\textdegree, 45\textdegree, 60\textdegree, and 90\textdegree can all be expressed as exact values. It's not essential to memorise these, but it can be extremely helpful, as if you can spotting one in questions often leads to getting solutions much faster. They can all be found usinng normal trigonometry on two different triangles:
+\begin{figure}[ht]
+    \centering
+    \incfig{exact-trig-values}
+    \caption{Triangles for working out the exact trig values}
+    \label{fig:exact-trig-values}
+\end{figure}
+The values themselves are:
+\begin{table}[ht]
+\begin{tabular}{llll}
+                             & Sin                  & Cos                  & Tan                 \\
+0\textdegree   & 0                    & 1                    & 0                   \\
+30\textdegree  & $\frac{1}{2}$        & $\frac{\sqrt{3}}{2}$ & $\frac{sqrt{3}}{3}$ \\
+45\textdegree  & $\frac{\sqrt{2}}{2}$ & $\frac{\sqrt{2}}{2}$ & 1                   \\
+60\textdegree  & $\frac{\sqrt{3}}{2}$ & $\frac{1}{2}$        & $\sqrt{3}$          \\
+90\textdegree  & 1                    & 0                    & Undefined          
+\end{tabular}
+\end{table}
+
+\subsection{Trig identities}
+There are two trig identities that are the most important to know. These are:
+\begin{IEEEeqnarray}{rCl}
+	\sin^2{\theta}+\cos^2{\theta} & \equiv & 1
+	\nonumber\\
+	\tan{\theta} & \equiv & \frac{\sin{\theta}}{\cos{\theta}}
+\end{IEEEeqnarray}
+The first one of these often gets rearranged to give that $\sin^2{\theta}+ \equiv 1 - \cos^2{\theta}$ or vice-versa. These can be proved by considering a unit circle on a cartesian grid:
+\begin{figure}[ht]
+    \centering
+    \incfig{two-key-trig-identities}
+    \caption{Two key trig identities}
+    \label{fig:two-key-trig-identities}
+\end{figure}
+We know from pythagoras that $x^2+y^2=1$, and we know by using trigonometry that $x=\cos{\theta}$ and $y=\sin{\theta}$. This means that the first identity must be true for all values of theta.
+
+We also know from trigonometry that $\tan{\theta}=\frac{y}{x}$, and as we know $x$ and $y$ in terms of trigonometric functions of $\theta$ then we can prove the second identity.

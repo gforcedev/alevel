@@ -39,7 +39,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2"
-     inkscape:cx="354.67786"
+     inkscape:cx="232.42786"
      inkscape:cy="189.17189"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -48,10 +48,10 @@
      width="200mm"
      showguides="false"
      inkscape:guide-bbox="true"
-     inkscape:window-width="3000"
-     inkscape:window-height="2000"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-width="2960"
+     inkscape:window-height="1890"
+     inkscape:window-x="20"
+     inkscape:window-y="90"
      inkscape:window-maximized="0">
     <inkscape:grid
        type="xygrid"
@@ -118,7 +118,7 @@
          id="tspan882"
          x="54.504166"
          y="231.3833"
-         style="stroke-width:0.26458332">$a$</tspan></text>
+         style="stroke-width:0.26458332">$A$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -129,7 +129,7 @@
          id="tspan882-5"
          x="163.98741"
          y="286.35211"
-         style="stroke-width:0.26458332">$b$</tspan></text>
+         style="stroke-width:0.26458332">$B$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -140,7 +140,7 @@
          id="tspan882-2"
          x="159.75407"
          y="190.7052"
-         style="stroke-width:0.26458332">$c$</tspan></text>
+         style="stroke-width:0.26458332">$C$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -151,7 +151,7 @@
          id="tspan882-1"
          x="168.35301"
          y="232.90623"
-         style="stroke-width:0.26458332">$A$</tspan></text>
+         style="stroke-width:0.26458332">$a$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -162,7 +162,7 @@
          id="tspan882-7"
          x="92.549904"
          y="271.40305"
-         style="stroke-width:0.26458332">$C$</tspan></text>
+         style="stroke-width:0.26458332">$c$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -173,6 +173,6 @@
          id="tspan882-9"
          x="92.285324"
          y="199.96556"
-         style="stroke-width:0.26458332">$B$</tspan></text>
+         style="stroke-width:0.26458332">$b$</tspan></text>
   </g>
 </svg>
