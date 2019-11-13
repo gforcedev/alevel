@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.954991"
-     inkscape:cx="461.15364"
-     inkscape:cy="256.69939"
+     inkscape:zoom="2.812514"
+     inkscape:cx="387.40323"
+     inkscape:cy="200.51454"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -108,7 +108,7 @@
          id="tspan828"
          x="125.02529"
          y="237.95026"
-         style="stroke-width:0.07829661">\theta</tspan></text>
+         style="stroke-width:0.07829661">$\theta$</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.13186455px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07829661"
@@ -123,13 +123,13 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:3.13186455px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07829661"
-       x="140.12314"
-       y="228.41284"
+       x="140.68758"
+       y="228.2247"
        id="text830-3-7"><tspan
          sodipodi:role="line"
          id="tspan828-6-5"
-         x="140.12314"
-         y="228.41284"
+         x="140.68758"
+         y="228.2247"
          style="stroke-width:0.07829661">$y$</tspan></text>
     <text
        xml:space="preserve"
@@ -149,20 +149,9 @@
        style="font-style:normal;font-weight:normal;font-size:3.13186455px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07829661"
        xml:space="preserve"><tspan
          style="stroke-width:0.07829661"
-         y="228.41284"
+         y="231.18381"
          x="140.12314"
          id="tspan886"
-         sodipodi:role="line">$y$</tspan></text>
-    <text
-       id="text892"
-       y="245.73267"
-       x="127.0479"
-       style="font-style:normal;font-weight:normal;font-size:3.13186455px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.07829661"
-       xml:space="preserve"><tspan
-         style="stroke-width:0.07829661"
-         y="245.73267"
-         x="127.0479"
-         id="tspan890"
-         sodipodi:role="line">$x$</tspan></text>
+         sodipodi:role="line" /></text>
   </g>
 </svg>
