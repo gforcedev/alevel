@@ -119,3 +119,19 @@ Nominative|er|e|es|e
 Accusative|en|e|es|e
 Genitive|en|er|en|er
 Dative|em|er|em|en
+
+# Imperatives
+The imperative has three forms in German: for du, ihr, and Sie.
+Regular|Imperative|Explanation
+---|---|---
+Du hörst|Hör|Take the (e)st off of the du form, drop the du
+Ihr hört|Hört|Same, just drop the ihr
+Sie hören|Hören Sie|Invert subject and verb
+
+## Imperatives of sein
+Sein is irregular:
+Regular|Imperative
+---|---
+Du bist|Sei
+Ihr Seid|Seid
+Sie sind|Seien Sie
