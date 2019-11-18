@@ -1,0 +1,58 @@
+\section{The Binomial Expansion}
+\subsection{Patterns in binomial expansions}
+Consider some binomial expansions:
+\begin{IEEEeqnarray}{rCl}
+	(x+y)^1 & = & x+y
+	\nonumber\\
+	(x+y)^2 & = & x^2+2xy+y^2
+	\nonumber\\
+	(x+y)^3 & = & x^3+3x^2y+3xy^2+y^3
+	\nonumber\\
+	(x+y)^4 & = & x^4+4x^3y+6x^2y^2+4xy^3+y^4
+\end{IEEEeqnarray}
+We can see some patterns here. Firstly, the power of the $x$ and $y$ on either end will be the same as the exponent of the binomial we started with. Secondly, as we move from left to right, the power of $x$ decreases by 1, and the power of $y$ increases (this would work perfectly if we explicitly wrote powers of 1 and 0).
+
+The slightly less obvious pattern is the coefficients in front of the expanded terms. They come from Pascal's triangle, in which every number is the sum of the 2 above it.
+
+\begin{figure}[ht]
+	\includegraphics[]{Pascals-triangle}
+	\centering
+	\caption{Pascal's triangle. Image from wikipedia.}
+\end{figure}
+
+\subsection{Finding large numbers from Pascal's triangle}
+To find large numbers from Pascal's triangle, we can use the choose function, written as either $^{n}C_{r}$ or ${n \choose r}$ (both pronounced ``$n$ choose $f$''). This function finds the $r$th number from the $n$th row of pascal's triangle (0-indexed), and can be expressed as:
+\begin{equation}
+	{n \choose r} = \frac{n!}{r!(n-r)!}
+\end{equation}
+
+\subsection{Binomial expansion general formula}
+This means that to find any term for a binomial expansion, we can use the following formula to find the $r$th term of general binomial $a+b^n$:
+\begin{equation}
+	{n \choose r}a^{r}b^{n-r}
+\end{equation}
+This can be used to find entire expansions (by subbing in all values of $r$ from $0$ to $n$), or to find specific terms or coefficients. It can also be used to set up equations if, for example, a question asks about the value of a constant found by a binomial expansion.
+
+\subsubsection{Solving equations with unknowns inside a choose}
+If, for example, we need to solve the equation ${x \choose 2} = 10$, then we can do so by substituting the function for choose into the equation, and relying on a special property of factorial. This property is as follows:
+
+$n! = n(n-1)(n-2)...1$. But the $(n-2)...1$ part of this could also be expressed as $(n-2)!$ in its own right. This means that for any integer $n$, $n!$ can be expressed by going as far into this series as necessary, with the last term written being factorial. In essence, $n! = n(n-1)! = n(n-1)(n-2)! = n(n-1)(n-2)(n-3)!$ etc.
+
+This means that to solve ${x \choose 2} = 10$, we can do the following, using this property to subsitute $x!$ down to the same value of $a$ in $(x-a)!$ as is on the bottom of the fraction, so that they cancel.
+\begin{IEEEeqnarray}{rClu}
+	{x \choose 2} & = & 10 &
+	\nonumber\\
+	\frac{x!}{2!(x-2!)} & = & 10 & //substitute choose function
+	\nonumber\\
+	\frac{x(x-1)(x-2)!}{2!(x-2!)} & = & 10 & //substitute $x!$ as discussed
+	\nonumber\\
+	\frac{x(x-1)}{2!} & = & 10 & //cancel $(x-2)!$
+	\nonumber\\
+	x(x-1) & = 20 &
+\end{IEEEeqnarray}
+After this, solve as with any other quadratic equation.
+
+\subsection{Approximating values with binomial expansions}
+We can use binomial expansion to approximate large powers of numbers that may otherwise prove difficult. This works by having a value for $b$ in $(a+b)^n$ which is less than 1, meaning that large powers of $b$ become increasingly small, making the entire expanded term in which they are present small enough to be insignificant.
+
+An example could be approximating $0.99^6$ by substituting $\frac{1}{10}$ into $(1-\frac{x}{10})$, expanding the first few terms (the number of terms to expand depends on the wanted level of precision, because as the power of $x$ gets higher, the overall term will get massively smaller to the point of being insignificant).
