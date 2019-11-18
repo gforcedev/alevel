@@ -74,9 +74,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="303.90994"
-     inkscape:cy="182.41874"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="356.64382"
+     inkscape:cy="177.89668"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -84,10 +84,10 @@
      width="200mm"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1470"
-     inkscape:window-height="613"
-     inkscape:window-x="1510"
-     inkscape:window-y="1367"
+     inkscape:window-width="2960"
+     inkscape:window-height="1890"
+     inkscape:window-x="20"
+     inkscape:window-y="90"
      inkscape:window-maximized="0"
      inkscape:snap-grids="false"
      inkscape:snap-nodes="false">
@@ -398,7 +398,7 @@
          id="tspan989"
          x="11.433469"
          y="224.01184"
-         style="stroke-width:0.13054971">Na 1s$^2$ 2s$^2$ 2p$^6$ 3s^1</tspan></text>
+         style="stroke-width:0.13054971">Na 1s$^2$ 2s$^2$ 2p$^6$ 3s$^1$</tspan></text>
     <circle
        id="path8-3-4"
        cx="158.8118"
