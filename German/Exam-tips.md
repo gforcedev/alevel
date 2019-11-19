@@ -14,3 +14,7 @@ Some things to think about when writing summaries:
  - stick to what's in the text - no personal opinions
  - using topic-specific vocab is ok - don't spend ages trying to paraphrase one difficult word
  - jottin down (for listenings), or highlighting (for readings) key points as they come up can be a good way of forming a skeleton answer
+
+# Misc tips
+## Which case for 'in'?
+One way to test whether an occurence of 'in' takes dative (no movement) or accusative (movement) is to translate into English and see whether it translates best as 'in' or 'into', with 'into' taking accusative.
