@@ -13,22 +13,22 @@ Fractions work similarly to cardinal numbers, but they drop the trailing 'n' and
 
 To say 'one in seven' or 'every seventh', you would say 'jeder siebte' (drop the trailing 'n' entirely and don't add anything)
 
-    German|English
-    :---:|:---:
-    halb|half (its special)
-    drittel|third
-    viertel|quarter
-    neunzehntel|nineteenth
-    zwanzigstel|twentieth
-    etc.|etc.
+German|English
+:---:|:---:
+halb|half (its special)
+drittel|third
+viertel|quarter
+neunzehntel|nineteenth
+zwanzigstel|twentieth
+etc.|etc.
 
 # Passive Voice
 Used in sentences without a subject. To form it, use a form of "werden" with a past participle.
 
-    German|English
-    :---:|:---:
-    Ich esse den Apfel|I am eating the apple
-    Der Apfel wird gegessen|The apple is being eaten
+German|English
+:---:|:---:
+Ich esse den Apfel|I am eating the apple
+Der Apfel wird gegessen|The apple is being eaten
 
 # Saying decimal numbers
 Decimal numbers are said with the number before the decimal, "Komma" (as in, the comma used instead of a decimal point in German), and then each number individually (or the whole number again).
