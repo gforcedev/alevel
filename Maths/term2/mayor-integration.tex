@@ -36,3 +36,24 @@ Let a function $f(x)$ have derivative $f'{x}$ for all $x \in [a,b]$. Then:
 \begin{equation}
 	\int\limits_{a}^{b}f'(x)dx=f(b)-f(a)
 \end{equation}
+
+\section{The are under a curve}
+\begin{figure}[ht]
+    \centering
+    \incfig{the-area-under-a-curve}
+    \caption{The area under a curve}
+    \label{fig:the-area-under-a-curve}
+\end{figure}
+Consider a very small change in $x$, $\delta x$. As $\delta x$ gets smaller, $\delta A$, the difference between the area under the curve $y=f(x)$ from $- \infty$ to $x$ and from $- \infty$ to $x + \delta x$, tends to a rectangle of height $f(x)$.
+
+This means that $\delta A \approx y\delta x$, and so $\frac{\delta A}{\delta x} \approx y$.
+
+So, $\lim_{\delta x \to 0} \frac{dA}{dx} = y$
+
+But, $\int \frac{dA}{dx} dx = \int (y) dx$, meaning that $A = \int (y) dx$. So if we integrate a function between 2 limits, we calculate the area under the curve between those 2 points.
+
+\subsection{Areas underneath the x-axis}
+If the area is under the x-axis rather than over it, then the definite integral to find it will give a negative answer, which will need to be multiplied by -1 to give the actual area.
+
+\subsection{Areas between a curve and a line}
+The area between a curve and a line can be found by finding the area under the curve and taking away the area under the line, or vice-versa. The area under the line can be found as a triangle, or by integrating the line's function between the two points.
