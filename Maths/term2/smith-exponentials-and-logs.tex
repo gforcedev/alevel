@@ -1,0 +1,90 @@
+\section{Exponentials}
+\subsection{Drawing exponential graphs}
+Drawing various exponential graphs is fairly easy with knowledge of their basic shape. Usually, it can be done by thinking of more complicated exponential functions as transformations of simpler ones.
+\begin{figure}[ht]
+    \centering
+    \incfig{basic-shape-of-an-exponential-graph}
+    \caption{basic shape of an exponential graph}
+    \label{fig:basic-shape-of-an-exponential-graph}
+\end{figure}
+
+\subsection{$e$}
+Euler's constant, $e$, about 2.718 is important for exponentials. For most exponential graphs, their derivative is similar in shape but slightly altered. For $y=e^x$, then the derivative is exactly identical to the original function. In addition, if $f(x)=e^{kx}$, the $f'(x)=ke^{kx}$.
+
+\subsection{Exponential modelling}
+Exponentials can be used to model certain real-life values such as population. In populations, then a common model is that the change in population is directly proportional to the current population. This would mean that it is a multiple of the current population. We can use the property that $y=e^{kx}$ differentiates to a multiple of itself to mirror this behaviour in a mathematical model.
+
+\section{Logarithms}
+Logarithms can be thought of as another way of writing indices. Instead of writing that $10^2=100$, we can write that $\log_{10}100=2$.
+
+Perhaps a better way of thinking about this would be that writing $\log_{a}b$ is like asking ``what power do I need to raise $a$ to to get $b$?''
+
+\subsection{Notation and labelling}
+The subscript number next to the log is called the base. If no base is written, then a base of 10 is implied. $\ln$ means log to base $e$.
+
+\subsection{Some important log equivalencies}
+\begin{equation}
+	\log_{a}a \equiv 1
+\end{equation}
+This is because any number to the power 1 is the same number.
+
+\begin{equation}
+	\log_{a}1 \equiv 0
+\end{equation}
+This is because any number to the power 0 is 1.
+
+\subsection{Laws of logarithms}
+N.B. These names are made up by Mr Smith rather than standardized. Don't cite ``Because of log rule 1'' or similar when explaining methods.
+\subsubsection{Log rule 1}
+\begin{equation}
+	\log_{a}xy=\log_{a}x+\log_{a}y
+\end{equation}
+If you have a logarithm of two terms multiplied together, you can split this into logs of the same bases of the two terms added. This also works in reverse - an addition of two logs with the same base can be combined into one log of both of those terms multiplied.
+
+\subsubsection{Log rule 2}
+\begin{equation}
+	\log_{a}\frac{x}{y}=\log_{a}x-\log_{a}y
+\end{equation}
+This is extremely similar to the first log rule, but with subtraction corresponding to division (or, if you like, adding negative numbers corresponding to multiplication by their reciprocals).
+
+\subsubsection{Log rule 3}
+\begin{equation}
+	\log_{a}x^k=k\log_{a}x
+\end{equation}
+If the term of which the log is being taken has an index, it can be moved to the front of the log, and vice-versa. Be careful with this: $log_{a}x^k$ is NOT the same as $(log_{a}x)^k$, and only the first form works with this rule.
+
+\subsection{Natural logarithms}
+Ln, or $\log_{e}$, is known as the natural logarithm. It has the interesting property that its graph is a reflection of $y=e^x$ in the line $y=x$.
+
+You can use the fact that logarithms are the inverses of exponential functions to solve equations based on $e^x$ using natural logs. This can be useful when working with exponential models. Sometimes these equations may be so-called ``quadratics in disguise''. In this case, you can solve as a quadratic for $e^x$ and then work out values for your answers using natural logarithms.
+
+\subsection{Using logs with non-linear data}
+We can use logarithms to transform non-linear data into displaying as linear data for the purposes of modelling or displaying. This can be done with polynomial relationships, or exponential relationships.
+
+\subsubsection{Polynomial relationships}
+A polynomial relationship between $x$ and $y$ would be $y=ax^n$. By taking logs of both sides, and then using the addition and power log rules, we can transform this relationship into something that looks similar to $y=mx+c$:
+\begin{IEEEeqnarray}{rCl}
+	y & = & ax^n
+	\nonumber\\
+	\log y & = & \log ax^n
+	\nonumber\\
+	\log y & = & \log a + \log x^n
+	\nonumber\\
+	\log y & = & \log a + n\log x
+	\nonumber\\
+	\log y & = & n\log x + \log a
+\end{IEEEeqnarray}
+So if we change $y$ and $x$ for $\log y$ and $\log x$ respectively, we end up with a linear relationship. This means that if we want to linearly represent polynomial relationships on a graph, we can plot $\log y$ against $\log x$.
+
+\subsubsection{Exponential relationships}
+An exponential relationship between $x$ and $y$ would be $y=ab^x$. Similarly to before, we can take logs of both sides and apply log rules to end up with something mirroring the equation of a line.
+\begin{IEEEeqnarray}{rCl}
+	y & = & ab^x
+	\nonumber\\
+	\log y & = & \log ab^x
+	\nonumber\\
+	\log y & = & \log b^x + \log a
+	\nonumber\\
+	\log y & = & x\log b + \log a
+\end{IEEEeqnarray}
+So if we change $y$ for $\log y$, then we get a linear relationship. This means that if we want to linearly represent exponential relationships on a graph, we can plot $\log y$ agaist $x$.
