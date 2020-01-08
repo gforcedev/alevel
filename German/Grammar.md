@@ -128,10 +128,39 @@ Du hörst|Hör|Take the (e)st off of the du form, drop the du
 Ihr hört|Hört|Same, just drop the ihr
 Sie hören|Hören Sie|Invert subject and verb
 
-## Imperatives of sein
+#### Imperatives of sein
 Sein is irregular:
 Regular|Imperative
 ---|---
 Du bist|Sei
 Ihr Seid|Seid
 Sie sind|Seien Sie
+
+# The Subjunctive
+## Forming the subjunctive
+There are two sets of conjugations used for subjunctive. Subjunctive 1 is similar to the present tense, while subjunctive 2, or the imperfect subjunctive, is the same as the imperfect for weak verbs, and for strong verbs, is formed by adding a set of endings to the imperfect stem, which has an umlaut added if it contains an "a", "o", or "u".
+
+Person|Subjunctive 1|Subjunctive 2 (of kommen)|Subjunctive 1 of sein
+---|---|---|---
+ich|spiele|käm**e**|sei
+du|spiel**est**|käm**est**|seiest
+er/sie/es/man|spiel**e**|käm**e**|sei
+wir|spielen|käm**en**|seien
+ihr|spiel**et**|käm**et**|seiet
+Sie|spielen|käm**en**|seien
+For subjunctive 1, the bolded endings are the ones which are different from the present.
+
+## When to use the subjunctive
+#### Reported speech
+The subjunctive is used in reported speech. For example, when reporting "he said he's playing football", we would use the subjunctive 1 form of spielen to show that it is reported speech: "er sagte, er **spiele** fussball". However, this comes with a small caveat: the subjunctive 2 form of the verb is used with reported speech in one of two cases
+ - a) The subjunctive one form of the verb would be the same as the present (eg. for ich, wir, or Sie) - we need to use subjunctive 2 to to show that we're using subjunctive at all.
+ - b) We want to show suspicion of what we're reporting.
+
+#### Hypothetical situations
+This scenario usually contains "als", "als ob", "wenn", or some other conjunctive, and always uses the subjunctive 2 form of the verb. An example would be the English "if I were you" which becomes "wenn ich dich wäre".
+
+#### Conditional phrases
+Conditional phrases (where English would just about always use a form of "would") are done with subjunctive 2 in German. Examples are "that would be great", which becomes "das wäre toll", or "ich hätte gern" which translates to "I would like" (literally "I would have gladly").
+
+#### Pluperfect subjunctive
+The pluperfect subjunctive is formed with a form of "hätte" or "wäre" and a past participle, and is used to say what would have been done differently in the past if circumstances had been different. An example would be "if it had rained" becoming "wenn es geregnet hätte".
