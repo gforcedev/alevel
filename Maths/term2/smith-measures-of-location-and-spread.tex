@@ -1,0 +1,53 @@
+\section{Measures of central tendency}
+Measures of central tendency, also known as averages, can be used to see whereabouts the `middle' of the data lies.
+\subsection{Types of average}
+\subsubsection{Mean}
+The mean is found by summing all of the data points, and dividing by the number of them. It is the average most commonly used in statistics, and represented as $\mu$ for a population mean, or $\bar{x}$ for a sample mean.
+
+\begin{equation}
+	\bar{x}=\frac{\sum{x}}{n}
+\end{equation}
+
+The mean has the advantage that it takes into account all of the data. However, it can also be heavily swayed by outliers.
+
+\subsubsection{Median}
+The median is found by ordering the data, and then picking the middle data point. It has the advantage of not particularly being affected by outliers, however it may not be representative of all of the data.
+
+\subsubsection{Mode}
+The mode is the data point(s) with the highest frequency. It has the advantage of being easy to calculate, and it can also be used with qualitative data. However, there may be more than one mode, or it may not exist at all.
+
+\subsection{Interpolation vs Extrapolation}
+Interpolation is using statistical analysis to estimate things inside the range of the data based on the data available. It is much more reliable than extrapolation, which uses the data to estimate something outside of its range.
+
+\subsection{Measures of spread}
+A fairly self-explanatory name, measures of spread can be used to quantify how spread out data points are.
+\subsection{Types of measure of spread}
+\subsubsection{Range}
+The range is the simplest measure of spread: It's the largest data point minus the smallest. It can be heavily affected by outliers on either side.
+
+\subsubsection{Inter-quartile range}
+The inter-quartile range is the upper quartile minus the lower quartile. It's unlikely that it will be affected by outliers, but it may also not be very representative given that it only considers 50\% of the data in calculations.
+
+\subsubsection{Inter-percentile ranges}
+Inter-percentile ranges can be between different percentiles of a statistician's choice. A common one would be the 90th percentile minus the 10th percentile. This can be a good middle ground between excluding outliers, and attempting to be as representative as possible of the bulk of the data.
+
+\subsection{Variance and standard deviation}
+The variance of data (represented by $S^2x$ or $\sigma^2x$ for sample and population variances respectively), is given by the formula:
+\begin{equation}
+	S_x = \frac{\sum{(x-\bar{x})^2}}{n}=\frac{\sum{x^2}}{n}-\left(\frac{\sum{x}}{n}\right)^2
+\end{equation}
+In words, you find the variance by finding the distance from every data point to the mean, squaring this distance, summing them, and then dividing by the number of data points. This can be simplified to the rightmost formula written above, which can be thought of as `the mean of the squares minus the square of the mean'.
+
+We can square root the variance to give what is known as the standard deviation, represented by $Sx$ or $\sigma x$.
+
+\subsection{Coding}
+Data can be coded in order to make it easier to work with. For example, if data points are very large numbers, they can be divided to make them easier to work with while working out some of these measures of central tendency or spread, and then the answers can be scaled back up to be representative of the original data.
+
+If data has been multiplied by one constant and had another added (this is known as linear coding), then the mean of the coded data is the same as the mean of the normal data having been coded in the same way. The standard deviation of the coded data will be the same as the standard deviation of the normal data multiplied by the first constant, but will ignore the addition of the second, because it takes into account the distance away from the mean, which the addition of the constant already affected. So for normal data $x$ and coded data $y$:
+\begin{IEEEeqnarray}{rCl}
+	y & = & ax + b
+	\nonumber\\
+	\bar{y} & = & a\bar{x} + b
+	\nonumber\\
+	\sigma y & = & a\sigma x
+\end{IEEEeqnarray}
