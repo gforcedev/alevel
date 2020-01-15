@@ -1,0 +1,48 @@
+\section{Variable acceleration}
+When acceleration is variable, we can express acceleration, velocity, and displacement of an object as arbitrary functions of $t$. This means that we can do things like finding minimum/maximum velocities and when then occur, as this is just doing pure maths things to the equations / graphs.
+
+\subsection{Using calculus to express suvat variables}
+Velocity is the change in displacement over time:
+\begin{equation}
+	v=\frac{ds}{dt}
+\end{equation}
+Acceleration is the change in velocity over time:
+\begin{equation}
+	a=\frac{dv}{dt}=\frac{d^2s}{dt^2}
+\end{equation}
+This means that we can differentiate from displacement to find velocity and / or acceleration.
+
+We can also go the other way and use integration starting from either velocity or acceleration to find functions to express the other variables. If this is necessary for a question an initial state will be given so that the constant of acceleration can be worked out.
+\begin{equation}
+	v=\int (a) dt
+\end{equation}
+\begin{equation}
+	s=\int (v) dt = \iint (a) dt
+\end{equation}
+
+\subsection{Using calculus to prove suvat equations}
+\subsubsection{Proof for $v=u+at$}
+\begin{IEEEeqnarray}{rCl}
+	v & = & \int (a) dt
+	\nonumber\\
+	v & = & at + c
+	\nonumber
+\end{IEEEeqnarray}
+When $v=u$, $t=0$, so $c=u$. This implies that:
+\begin{equation}
+	v=u+at
+\end{equation}
+
+\subsubsection{Proving $s=ut+\frac{1}{2}at^2$}
+\begin{IEEEeqnarray}{rCl}
+	s & = & \int(v) dt
+	\nonumber\\
+	s & = & \int(u+at) dt
+	\nonumber\\
+	s & = & ut+\frac{1}{2}at^2+c
+	\nonumber
+\end{IEEEeqnarray}
+When $t=0$, $s=0$, so $c=0$. This implies that:
+\begin{equation}
+	s=ut+\frac{1}{2}at^2
+\end{equation}
