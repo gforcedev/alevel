@@ -1,0 +1,48 @@
+\section{Algebraic methods}
+\subsection{Proof by contradiction}
+To prove by contradiction, the first step is to assume the negation of the statement. This negation statement is then used to arrive at a contradiction (statement we already know is untrue).
+\subsubsection{Proof that $\sqrt{2}$ is irrational}
+This proof is examinable.
+
+First assume negation that $\sqrt{2}$ is rational, and can be written as a fraction $\frac{a}{b}$ in its simplest form ($a$ and $b$ have no common factors).
+
+\begin{IEEEeqnarray}{rCl'r}
+	\sqrt{2} & = & \frac{a}{b} & a, b \in \mathbb{Z}
+	\nonumber\\
+	2 & = & \frac{a^2}{b^2}
+	\nonumber\\
+	2b^2 & = & a^2
+	\nonumber
+\end{IEEEeqnarray}
+This implies that $a^2$ is even, and so that $a$ is even. At this point we can let $a=2c$, $c \in \mathbb{Z}$
+
+\begin{IEEEeqnarray}{rCl'r}
+	2b^2 & = & (2c)^2
+	\nonumber\\
+	2b^2 & = & 4c^2
+	\nonumber\\
+	b^2 & = 2c^2
+	\nonumber
+\end{IEEEeqnarray}
+
+This implies that $b^2$ is even, and so that $b$ is even.
+
+This is a contradiction as $\frac{a}{b}$ is in fact not in its simplest form. Hence, $\sqrt{2}$ is irrational.
+
+\subsubsection{Proof that there are infinitely many prime numberes}
+This proof is examinable.
+
+Assume negation that there is a finite list of primes, and let $P_1, P_2, P_3 \ldots P_n$ be this list.
+
+Let $X=P_1 \times P_2 \times P_3 \ldots \times P_n$
+
+$X>P_i$ for any $i$, so $X$ cannot be prime as it is not in the list.
+
+Dividing $X$ by $P_i$ for any $i$ leaves remainder $1$, so $X$ cannot be product of primes.
+
+So, $X$ is neither a prime or product of primes. This is a contradiction.
+
+Hence, there are infinitely many prime numbers.
+
+\subsection{Partial fractions}
+A single fraction with two distinct linear factors in the denominator can be split into two partial fractions with linear denominators. To do this, first define variables as the numerators of these partial fractions, and then form an identity with the partial fractions. Next, multiply by the denominator of the full fraction, to set the numerators equal. Next values of $x$ can be substituted into the identity to eliminate the unknown partial fraction numerators.
