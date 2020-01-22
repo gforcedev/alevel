@@ -73,3 +73,24 @@ A single fraction with two distinct linear factors in the denominator can be spl
 
 \subsubsection{When the denominator has a repeated factor}
 If the denominator has a repeated factor, then one of the partial fractions will need to have that factor squared as a denominator so that it's possible to follow these steps without eliminating all of the variables. So $\frac{11x^2+14x+5}{(x+1)^2(2x+1)}$ would be split into $\frac{A}{x+1} + \frac{B}{(x+1)^2} + \frac{C}{2x+1}$.
+
+\subsection{Improper algebraic fractions}
+Improper algebraic fractions are defined as algebraic fractions with numerators which are polynomials of the same or a higher degree as their denominator.
+
+To get rid of an improper algebraic fraction, two methods can be used.
+\subsubsection{Fixing improper algebraic fractions with polynomial long division}
+Polynomial long division can be used to fix algebraic fractions. Working out the remainder of the fraction means that it can be rewritten into just having the remainder over the denominator: if dividing $x^2+5x+8$ by $x-2$ give $x+7$ remainder $22$, then $\frac{x^2+5x+8}{x-2}=x+7+\frac{22}{x-2}$.
+
+\subsubsection{Fixing improper algebraic fractions by forcing the denominator into the numerator}
+By forcing the denominator into the numerator and subtracting other terms until the fractions are equal, it's possible to reduce the degree of the numerator polynomial until it's lower than the denominator.
+
+This works by multiplying the denominator by something that will make the largest exponent in the numerator, and then separating the fraction and cancelling the denominators.
+\begin{IEEEeqnarray}{rCl}
+	\frac{x^2+5x+8}{x-2} & = & \frac{x(x-2)+7x+8}{x-2}
+	\nonumber\\
+	& = & x + \frac{7x+8}{x-2}
+	\nonumber\\
+	& = & x + \frac{7(x-2)-22}{x-2}
+	\nonumber\\
+	& = & x + 7 + \frac{22}{x-2}
+\end{IEEEeqnarray}
