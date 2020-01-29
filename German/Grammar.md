@@ -136,6 +136,20 @@ Du bist|Sei
 Ihr Seid|Seid
 Sie sind|Seien Sie
 
+# Imperfect tense
+The imperfect is formed for regular verbs by taking the stem and adding the following endings:
+Person|Ending
+---|---
+ich|-te
+du|-test
+er/sie/man|-te
+wir|-ten
+ihr|-tet
+Sie|-ten
+sie|-ten
+
+For irregulars, the irregular stem is used, and the same endings are used, minus the 't' at the start. For ich and du where the ending would be 'te', no ending is needed.
+
 # The Subjunctive
 ## Forming the subjunctive
 There are two sets of conjugations used for subjunctive. Subjunctive 1 is similar to the present tense, while subjunctive 2, or the imperfect subjunctive, is the same as the imperfect for weak verbs, and for strong verbs, is formed by adding a set of endings to the imperfect stem, which has an umlaut added if it contains an "a", "o", or "u".
