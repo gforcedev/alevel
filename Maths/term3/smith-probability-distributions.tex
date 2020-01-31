@@ -1,0 +1,40 @@
+\section{Probability distributions}
+\subsection{Discrete random variables}
+A discrete random variable is a variable that can take any value in a discrete sample space. For example, the outcome of rolling a die.
+\subsection{Probability distributions}
+A probability distribution can be written as a table, and represents the likelihood of every different outcome. An example for a biased spinner could be:
+\begin{table}[ht]
+\begin{tabular}{llll}
+$x$      & 1              & 2              & 3              \\
+$P(X=x)$ & $\frac{3}{10}$ & $\frac{6}{10}$ & $\frac{1}{10}$
+\end{tabular}
+\end{table}
+If all of the possible outcomes are listed, then the probabilities will sum to 1.
+
+\subsection{Binomial distribution}
+\subsubsection{Derivation / how to think about binomial distributions}
+There are $5!$ permutations of 5 numbers (5 possibilities for the first, 4 for the second, and so on).
+
+There are $\frac{5!}{2!}$ permutations for 5 numbers in 3 boxes (5 possibilities, then 4, then 3, so need to divide by $2!$).
+
+There are $\frac{5!}{2!3!}$ combinations for 5 numbers in 3 boxes (same as above, need to divide by 2! to ignore order).
+
+In general, there are $\frac{n!}{r!(n-r)!}$ combinations of $n$ numbers in $r$ boxes, or $\binom{n}{r}$ combinations.
+
+To make this into a probability distribution, we can think about a biased coin, with a $\frac{3}{5}$ probability of heads. The chance of getting 7 heads when flipping 10 times would be $\binom{10}{7}$, multiplied by the probability of heads to the power of the number you want ($\frac{3}{5}^7$) multiplied by how the probability of tails to the power of how many there would be ($\frac{2}{5}^3$).
+
+\subsubsection{Binomial distribution conditions}
+The binomial distribution can be used to model situtations when:
+\begin{itemize}
+	\item there are a fixed number of trials ($n$)
+	\item there are two possible outcomes (one counting as a succes, one as a faliure)
+	\item there's a fixed probability of success for each trial ($p$)
+	\item the trials are independent
+\end{itemize}
+
+\subsubsection{Applying binomial distributions}
+These binomial distributions would be written as $X \sim Bin(n,p)$. Going back to the biased coin example, this would be written as $X \sim Bin\left(10, \frac{3}{5}\right)$, and so in general then that binomial distribution would be:
+\begin{equation}
+	P(X=r) = \binom{n}{r}p^r(1-p)^{n-r}
+\end{equation}
+This can be worked out using a calculator in stats mode. It can also work out the value for $P(x\leq r)$ in binomial distribution, which is often useful for questions involving binomial distribution.
