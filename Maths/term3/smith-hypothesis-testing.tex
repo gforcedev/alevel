@@ -1,0 +1,32 @@
+\section{Hypothesis testing}
+Conducting a hypothesis test follows a series of steps. First, the test statistic is identified. This is the result of the experiment that's being carried out. Next, two hypotheses are formed. The null hypothesis, $H_0$, is assumed to be correct. The alternative hypothesis, $H_1$, is what you're checking to see there's statistically significant evidence to support, so that you can reject the null hypothesis, based on the experimental data collected.
+
+\subsection{An example hypothesis test}
+To test whether a coin is biased towards heads, the test statistic would be the number of heads thrown. The null hypothesis would be that there was half a chance of heads, and the alternative hypothesis would be that there was more than half a chance of heads:
+\begin{IEEEeqnarray}{rr}
+	H_0: & p=0.5
+	\nonumber\\
+	H_1: & p>0.5
+	\nonumber
+\end{IEEEeqnarray}
+
+What we need to do now is run a test, and see how likely the result was to happen. Consider if the coin was flipped 10 times, and landed on heads for 7 of them. We assume the null hypothesis to be true, and so assume that $x \sim Bin(10, 0.5)$, and then use a calculator to work out the probability of 7 (or more) out of the 10 throws being heads if this was the case. In order to do this, we will need to do 1 minus the probability of 6 or lower, which gives an answer of $0.171875$.
+
+We then compare this to a predetermined significance level, which is given in the question, with $5\%$ being convention. In this case, $0.171875>0.5$, so there is not enough evidence to reject the null hypothesis.
+
+\subsection{Some definitions}
+The critical region, or rejection region, is the set of values which would be unlikely enough to provide evidence to reject the null hypothesis.
+
+The critical value is the value on the inside edge of the critical region.
+
+The acceptance region is the set of values which wouldn't cause the null hypothesis to be rejected.
+\subsection{One- and two-tailed tests}
+A one-tailed test would have $H_1$ be either $p \leq a$, or $p \geq a$, where $a$ is some constant, and so would have a critical region with all values next to each other.
+
+A two-tailed test would have $H_1$ be $p \neq a$, and so the critical region would contain values above or below, and the significance value would be split between the two sets of values.
+\begin{figure}[ht]
+    \centering
+    \incfig{one-tailed-and-two-tailed-test}
+    \caption{one-tailed and two-tailed test}
+    \label{fig:one-tailed-and-two-tailed-test}
+\end{figure}
