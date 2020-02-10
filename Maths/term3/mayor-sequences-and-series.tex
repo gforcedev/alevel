@@ -1,0 +1,88 @@
+\section{Sequences and series}
+\subsection{Arithmetic sequences}
+Arithmetic, or linear sequences, are sequences where the difference between consecutive terms is constant.
+
+We describe arithmetic sequences with first term $a$, and common difference $d$. This makes the general arithmetic sequence $a, (a+d), (a+2d)$, etc. The $n$th term of a general arithmetic sequence is $a+(n-1)d$.
+
+\subsection{Arithmetic series}
+A series is the sum of numbers in a sequence, and so an arithmetic series is the sum of terms in an arithmetic sequence.
+
+\subsubsection{Sum to $n$ of an arithmetic series}
+Consider this method of summing the numbers from 1 to 100: First, write them all out forward:
+\begin{equation}
+	S_{100}=1+2+3+...+100
+	\nonumber
+\end{equation}
+Then, write them out backward:
+\begin{equation}
+	S_{100}=100+99+98+...+1
+	\nonumber
+\end{equation}
+
+Adding terms above each other will always give 101, so:
+\begin{IEEEeqnarray}{rCl}
+	2S_{100} & = & 100\times101
+	\nonumber\\
+	S_{100} & = & \frac{100\times101}{2}
+	\nonumber\\
+	S_{100} & = & 5050
+\end{IEEEeqnarray}
+
+This also works for the general case, to give the general sum to $n$ of an arithmetic series:
+\begin{IEEEeqnarray}{rCl}
+	S_n & = & a + (a+d) + ... + (a+(n-1)d)
+	\nonumber\\
+	S_n & = & (a+(n-1)d) + (a+(n-2)d) + ... + a
+	\nonumber
+\end{IEEEeqnarray}
+So the first and last term, second and penultimate term, and so on all sum to $2a+(n-1)d$:
+\begin{IEEEeqnarray}{rCl}
+	2S_n & = & n(2a+(n-1)d)
+	\nonumber\\
+	S_n & = & \frac{n}{2}(2a+(n-1)d)
+\end{IEEEeqnarray}
+This proof of the general sum to $n$ of an arithmetic series is examinable.
+
+As the $n$th term is equal to $a+(n-1)d$, then that can be substituted into this formula to give that $S_n=\frac{n}{2}(a+l)$ where $l$ is the last term in the series.
+
+\subsection{Geometric sequences}
+Geometric sequences are sequences in which there is a common ratio to get from one term to the next. They can be represented with first term $a$, and common ratio $r$.
+
+The general geometric sequence would be $a, (ar), (ar^2), (ar^3)$, etc. This makes the general $n$th term for a geometric sequence $ar^{n-1}$.
+
+An extremely useful process for solving questions involving arithmetic sequences is dividing two adjacent terms to find $r$ (or dividing any two terms to get some power of it).
+
+\subsection{Geometric series}
+Geometric series are the sums of geometric sequences.
+
+\subsubsection{Sum of geometric series}
+The proof for the sum to $n$ of a general geometric series is similar to the one for an arithmetic series (and similarly examinable at A-level). However, instead of writing the sequence out backwards and adding the two together, you multiply by $r$ and then subtract. Everything apart from the first and last terms then cancel out and the solution is easy to get to after that point.
+\begin{IEEEeqnarray}{rCl}
+	S_n & = & a + (ar) + (ar^2) + ... + (ar^{n-1})
+	\nonumber\\
+	rS_n & = & ar + (ar^2) + (ar^3) + ... + (ar^n)
+	\nonumber\\
+	rS_n-S_n & = & a(1-r^n)
+	\nonumber\\
+	S_n(1-r) & = & a-(1-r^n)
+	\nonumber\\
+	S_n & = & \frac{a(1-r^n)}{1-r}
+\end{IEEEeqnarray}
+
+\subsubsection{Convergent and divergent sequences}
+Convergent geometric series are geometric series where the terms get closer and closer to 0. This happens when $|r|<1$.
+
+Divergent geometric series are geometric series where the terms get further away from 0. This happens when $|r|>1$.
+
+\subsubsection{Sum to infinity of convergent geometric series}
+If a geometric series is convergent, then as $n\to\infty$, $S_n\to\k$, where $k$ is a constant. We can find this constant by working out the limit as $n\to\infty$ of the formula for the sum of the geometric series:
+
+\begin{IEEEeqnarray}{rCl}
+	S_\infty & = & \lim_{n\to\infty}\frac{a(1-r^n)}{1-r}
+	\nonumber\\
+	S_\infty & = & \frac{a}{1-r}
+\end{IEEEeqnarray}
+
+This is because as $n\to\infty$, $r^n\to 0$.
+
+For divergent series, this isn't applicable because as $n\to\infty$, $S_n\to\infty$.
