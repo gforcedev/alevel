@@ -1,0 +1,21 @@
+#!/bin/bash
+RELEASE_NAME=release-$(date +"%Y-%m-%d")
+mkdir $RELEASE_NAME
+
+cd Maths
+rm master.aux
+sed -i 's/\% \\include/\\include/g' master.tex
+pdflatex -interaction=nonstopmode master.tex
+mv master.pdf ../$RELEASE_NAME/Maths.pdf
+
+cd ../Chemistry
+rm master.aux
+sed -i 's/\% \\include/\\include/g' master.tex
+pdflatex -interaction=nonstopmode master.tex
+mv master.pdf ../$RELEASE_NAME/Chemistry.pdf
+
+cd ..
+cp -r German $RELEASE_NAME/
+
+git stash
+git stash drop
