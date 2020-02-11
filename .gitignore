@@ -11,3 +11,5 @@ Chemistry/*
 Chemistry/*/*
 !Chemistry/figures/*
 !Chemistry/*/*.tex
+
+release*
