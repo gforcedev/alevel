@@ -17,5 +17,8 @@ mv master.pdf ../$RELEASE_NAME/Chemistry.pdf
 cd ..
 cp -r German $RELEASE_NAME/
 
+cd $RELEASE_NAME
+zip -r $RELEASE_NAME.zip .
+
 git stash
 git stash drop
