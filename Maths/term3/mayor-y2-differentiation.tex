@@ -1,0 +1,106 @@
+\section{Year 2 Differentiation}
+\subsection{The chain rule}
+The chain rule is used for differentiating composite functions.
+
+In function notation:
+\begin{IEEEeqnarray}{rCl}
+	y & = & f(g(x))
+	\nonumber\\
+	\frac{dy}{dx} & = & f'(g(x)) \times g'(x)
+\end{IEEEeqnarray}
+
+In Leibnitz notation, where $y$ is a function of $u$ and $u$ is a function of $x$:
+\begin{equation}
+	\frac{dy}{dx} = \frac{dy}{du} \times \frac{du}{dx}
+\end{equation}
+
+It's easier to remember the catchphrase, or the steps for differentiating something using the chain rule, which is ``Differentiate the outer function keeping the inner one the same, and then multiply by the derivative of the inner function.''
+
+\subsubsection{Proving the derivative of $e^{kx}$ is $ke^{kx}$}
+Using the chain rule, we can differentiate $e^{kx}$ (not required, but a good example of the chain rule):
+\begin{IEEEeqnarray}{rCl}
+	y & = & e^{kx}
+	\nonumber\\
+	u & = & kx
+	\nonumber\\
+	\frac{du}{dx} & = & k
+	\nonumber\\
+	y & = & e^u
+	\nonumber\\
+	\frac{dy}{du} & = & e^u
+	\nonumber\\
+	\frac{dy}{du} & = & e^{kx}
+	\nonumber\\
+	\frac{dy}{dx} & = & \frac{dy}{du} \times \frac{du}{dx}
+	\nonumber\\
+	\frac{dy}{dx} & = & k \times e^{kx}
+	\nonumber\\
+	\frac{dy}{dx} & = & ke^{kx}
+\end{IEEEeqnarray}
+
+\subsection{Differentiating exponentials and natural logarithms}
+\subsubsection{Differentiating natural logarithms}
+The derivative of $\ln{x}$ is $\frac{1}{x}$. The proof for this (not required), uses the trick of rearranging to make $x$ the subject, differentiating for $y$, and then flipping $\frac{dx}{dy}$ upside down (bringing the value to the power of -1) in order to get $\frac{dy}{dx}$.
+
+\subsubsection{Differentiating exponentials}
+The derivative of $a^x$ is $a^x\ln{a}$. The proof for this (again, not requred), works by bringing $e$ to the power of the natural logarithm of the original fuction, and then using log rules to rearrange to something easier to differentiate:
+\begin{equation}
+	y = a^x = e^{\ln{a^x}} = e^{(\ln{a})x}
+	\nonumber
+\end{equation}
+We can now use that the derivative of $e^{kx}$ is $ke^{kx}$:
+\begin{equation}
+	\frac{dy}{dx} = (\ln{a})e^{(\ln{a})x} = (\ln{a})e^{\ln{a^x}} = a^x\ln{a}
+\end{equation}
+
+We can use this in conjunction with the chain rule to prove that the derivative of $y=a^{kx}$ is $ka^{kx}\ln{a}$
+
+\subsection{The product rule}
+The product rule is used for differentiating two functions multiplied together. In function notation: if $y=f(x)\times g(x)$, then
+\begin{equation}
+	\frac{dy}{dx}=f(x)\times g'(x) + g(x)\times f'(x)
+\end{equation}
+
+In Leibnitz notation: if $y=uv$, then
+\begin{equation}
+	\frac{dy}{dx}=u\frac{dv}{dx}+v\frac{du}{dx}
+\end{equation}
+
+In terms of a catchphrase, then to apply the product rule take the first function multiplied by the derivative of the second, and add the second function multiplied by the derivative of the first.
+
+The proof for this involves setting up a differentiation from first principles, and then both subtracting and adding $f(x+h)g(x)$:
+\\\\
+Let $y=f(x)g(x)$
+\begin{IEEEeqnarray}{rCl}
+	\frac{dy}{dx} & = & \lim_{h\to 0} \frac{f(x+h)g(x+h)-f(x)g(x)}{h}
+	\nonumber\\
+	& = & \lim_{h\to 0}\frac{f(x+h)g(x+h)-f(x+h)g(x)+f(x+h)g(x)-f(x)g(x)}{h}
+	\nonumber\\
+	& = & \lim_{h\to 0}f(x+h)\left(\frac{g(x+h)-g(x)}{h}\right)+g(x)\left(\frac{f(x+h)-f(x)}{h}\right)
+	\nonumber\\
+	& = & \lim_{h\to 0}\left[f(x+h)\left(\frac{g(x+h)-g(x)}{h}\right)+\right]+\lim_{h\to 0}\left[g(x)\left(\frac{f(x+h)-f(x)}{h}\right)\right]
+	\nonumber\\
+	& = & \lim_{h\to 0}f(x+h)\times\lim_{h\to 0}\left[\frac{g(x+h)-g(x)}{h}\right] + \lim_{h\to 0}g(x)\times\lim_{h\to 0}\left[\frac{f(x+h)-f(x)}{h}\right]
+	\nonumber\\
+	& = & f(x)g'(x)+g(x)f'(x)
+\end{IEEEeqnarray}
+
+\subsection{The quotient rule}
+The quotient rule is used for differentiating two functions, one divided by the other. In Leibnitz notation, if $y=\frac{u}{v}$:
+\begin{equation}
+	\frac{dy}{dx} = \frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}
+\end{equation}
+
+In words, then it's the bottom times the derivative of the top, minus the top times the derivative of the bottom, all over the bottom squared.
+
+The proof for this involves using the product rule for for $uv^{-1}$,
+because, by the chain rule, we can use that $\frac{dv}{dx}v^{-1}=-v^{-2}\times\frac{dv}{dx}$:
+\begin{IEEEeqnarray}{rCl}
+	\frac{dy}{dx} & = & u\times \frac{d}{dx}(v^{-1})+v^{-1}\times\frac{du}{dx}
+	\nonumber\\
+	& = & u\times \left(-v^{-2}\times \frac{dv}{dx}\right)+v^{-1}\times\frac{du}{dx}
+	\nonumber\\
+	& = & \frac{-u}{v^2}\times \frac{dv}{dx}+v^{-1}\times\frac{du}{dx}
+	\nonumber\\
+	& = & \frac{v\frac{du}{dx}-u\frac{dv}{dx}}{v^2}
+\end{IEEEeqnarray}

@@ -75,7 +75,7 @@ Convergent geometric series are geometric series where the terms get closer and 
 Divergent geometric series are geometric series where the terms get further away from 0. This happens when $|r|>1$.
 
 \subsubsection{Sum to infinity of convergent geometric series}
-If a geometric series is convergent, then as $n\to\infty$, $S_n\to\k$, where $k$ is a constant. We can find this constant by working out the limit as $n\to\infty$ of the formula for the sum of the geometric series:
+If a geometric series is convergent, then as $n\to\infty$, $S_n\to k$, where $k$ is a constant. We can find this constant by working out the limit as $n\to\infty$ of the formula for the sum of the geometric series:
 
 \begin{IEEEeqnarray}{rCl}
 	S_\infty & = & \lim_{n\to\infty}\frac{a(1-r^n)}{1-r}
@@ -86,3 +86,26 @@ If a geometric series is convergent, then as $n\to\infty$, $S_n\to\k$, where $k$
 This is because as $n\to\infty$, $r^n\to 0$.
 
 For divergent series, this isn't applicable because as $n\to\infty$, $S_n\to\infty$.
+
+\subsection{Sigma notation}
+Sums of series can be written in sigma notation. A capital sigma is used, with the variable and the number it starts at underneath, and the number it finishes at (inclusive) above. For example:
+\begin{equation}
+	\sum_{r=1}^{20}4r+1
+	\nonumber
+\end{equation}
+
+\subsection{Recurrence relations}
+A recurrence relation is a way of expressing terms of a sequence in terms of the previous term. The are often in the form $U_{n+1}=f(U_n)$. $U_1$ (or, at least one value somewhere in the sequence) also needs to be specified.
+
+\subsubsection{Increasing and decreasing sequences}
+Sequences are increasing if $U_{n+1}>U_n \forall n \in N$.
+
+Sequences are decreasing if $U_{n+1}<U_n \forall n \in N$.
+
+Note that there are some sequences that are neither, for example geometric sequences with a negative common ratio.
+
+\subsubsection{Periodic sequences}
+Sequences are periodic if their terms repeat in a cycle. The number of terms in one complete cycle is called the period, or the order.
+
+\subsection{Modelling with sequences and series}
+Moddeling questions involving sequences and series often use the trick of having the first year actually be the 0th term in the sequence, or maybe the second. A useful tip for sequences modelling questions is to be doubly sure exactly which term in the sequence you need to work out.
