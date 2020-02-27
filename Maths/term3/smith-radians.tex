@@ -1,0 +1,45 @@
+\section{Radians}
+Radians are a unit of angle measurement. They are based on a sector with arc length the same as the circle's radius. The angle of that sector is one radian. There are $2\pi$ radians in 360 \textdegree.
+
+Some other useful angle conversions:
+\begin{table}[ht]
+\begin{tabular}{|l|l|}
+\hline
+Degrees & Radians          \\ \hline
+360     & $2\pi$           \\ \hline
+270     & $\frac{3\pi}{2}$ \\ \hline
+180     & $\pi$            \\ \hline
+90      & $\frac{\pi}{2}$  \\ \hline
+60      & $\frac{\pi}{3}$  \\ \hline
+45      & $\frac{\pi}{4}$  \\ \hline
+30      & $\frac{\pi}{6}$  \\ \hline
+\end{tabular}
+\end{table}
+
+These would be pronounced, for example, ``$\pi$ by 2'' or ``$\pi$ by 3''.
+
+\subsection{Arc length}
+To work out arc length in degrees, you divide the angle by 360, and multiply that fraction by the circumference. For A-level, the same thing applies, but first you have to convert the angle from radians to degrees (multiply by $\frac{180}{\pi}$). Cancelling down this formula gives that the formula for arc length in radians is much nicer:
+\begin{equation}
+	\frac{\theta \times \frac{180}{\pi}}{360}\times 2\pi r = r\theta
+\end{equation}
+
+\subsection{Sector area}
+Similar to arc length, we can use the same formula as degrees, but convert to radians first and then cancel to give a nicer formula for radians:
+\begin{equation}
+	\frac{\theta \times \frac{180}{\pi}}{360}\times \pi r^2 = \frac{1}{2}r^2\theta
+\end{equation}
+
+\subsection{Small angle approximations of trig functions}
+When using radians, the trigonometric functions tend to simpler functions as $\theta$ gets small.
+
+If $\theta$ is small, then:
+\begin{IEEEeqnarray}{rCl}
+	\sin{\theta} & \approx & \theta
+	\nonumber\\
+	\cos{\theta} & \approx & 1-\frac{\theta^2}{2}
+	\nonumber\\
+	\tan{\theta} & \approx & \theta
+\end{IEEEeqnarray}
+
+This can be shown by comparing the graphs and focusing on the area where $x$ gets close to 0. This is useful because if $\theta$ is small, we can substitute in its the small angle approximation of any trig functions and often cancel to a much nicer expression in questions.
