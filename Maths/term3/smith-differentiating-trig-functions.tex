@@ -1,0 +1,21 @@
+\section{Differentiating trigonometric functions from first principles}
+We can use first principles to differentiate sin and cos, by substituting the addition angle formulae, as well as the small angle approximations because $h \to 0$.
+\begin{IEEEeqnarray}{rCl}
+	y & = & \sin{x}
+	\nonumber\\
+	\frac{dy}{dx} & = & \lim_{h \to 0} \frac{\sin{(x+h)}-\sin{x}}{h}
+	\nonumber\\
+	\frac{dy}{dx} & = & \lim_{h \to 0} \frac{\sin{x}\cos{h} + \cos{x}\sin{h} - \sin{x}}{h}
+	\nonumber\\
+	\frac{dy}{dx} & = & \lim_{h \to 0} \frac{\sin{x}(\cos{h}-1) + \cos{x}\sin{h}}{h}
+	\nonumber\\
+	\frac{dy}{dx} & = & \lim_{h \to 0} \frac{\sin{x}(1-\frac{h^2}{2}-1) + h\cos{x}}{h}
+	\nonumber\\
+	\frac{dy}{dx} & = & \lim_{h \to 0} \frac{\frac{h^2}{2}\sin{x} + h\cos{x}}{h}
+	\nonumber\\
+	\frac{dy}{dx} & = & \lim_{h \to 0} \frac{h}{2}\sin{x} + \cos{x}
+	\nonumber\\
+	\frac{dy}{dx} & = & \cos{x}
+\end{IEEEeqnarray}
+
+Following a similar process for $\cos{x}$ will give $-\sin{x}$. In fact, the derivatives of these trig functions go in a cycle: $\sin$, $\cos$, $-\sin$, $-\cos$, and then back to $sin$ again differentiating once each time.

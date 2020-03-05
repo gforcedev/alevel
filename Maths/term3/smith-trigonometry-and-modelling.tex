@@ -1,0 +1,80 @@
+\section{Trigonometry and modelling}
+\subsection{Addition angle formulae}
+The double angle formulae can be used to split trigonometric functions of two terms added or subtracted into more trigonometric functions, but all containing only one term. They are:
+\begin{IEEEeqnarray}{rCl}
+	\sin(A\pm B) & \equiv & \sin{A} \cos{B} \pm \cos{A} \sin{B}
+	\\
+	\cos(A\pm B) & \equiv & \cos{A} \cos{B} \mp \sin{A} \sin{B}
+	\\
+	\tan(A\pm B) & \equiv & \frac{\tan{A} \pm \tan{B}}{1 \mp \tan{A} \tan{B}}
+\end{IEEEeqnarray}
+
+A common use case for the double angle formlae is splitting one term into the sum of two in order to get an exact value out of a trig function. For example, finding the exact value of $\sin{15^\circ}$ by splitting it into $\sin{45^\circ}-\sin{30^\circ}$.
+
+\subsection{Double angle formulae}
+The double angle formulae are special cases of the addition angle formulae (ie. the case when $A$ and $B$ are the same). They simplify the formulae to:
+
+\begin{IEEEeqnarray}{rCl}
+	\sin(2A) & \equiv & 2\sin{A} \cos{A}	
+	\\
+	\cos(2A) & \equiv & \cos^2{A} - \sin^2{A}
+	\nonumber\\
+			 & \equiv & 1-2\sin^2{A}
+	\nonumber\\
+			 & \equiv & 2\cos^2{A}-1
+	\\
+	\tan(2A) & \equiv & \frac{2\tan{A}}{1 - \tan^2{A}}
+\end{IEEEeqnarray}
+
+\subsection{$R\cos{(\theta\pm\alpha)}$ and $R\sin{(\theta\pm\alpha)}$}
+This technique can be used to combine two separate trogonometric functions into one. It is best demonstrated on the example question of writing $5\sin{\theta}+12\cos{\theta}$ in the form $Rsin{(\theta+\alpha)}$. First of all, we expand the target with the addition angle formulae.
+
+\begin{IEEEeqnarray}{rCl}
+	5\sin{\theta}+12\cos{\theta} & \equiv & R\sin{(\theta+\alpha)}
+	\nonumber\\
+	5\sin{\theta}+12\cos{\theta} & \equiv & R\sin{\theta}\cos{\alpha} + R\cos{\theta}\sin{\alpha}
+	\nonumber
+\end{IEEEeqnarray}
+
+Next, we can form two equations by equating coefficients of $\sin{\theta}$ and $\cos{\theta}$:
+\begin{IEEEeqnarray}{rCl}
+	5 & = & R\cos{\alpha}
+	\nonumber\\
+	12 & = & R\sin{\alpha}
+	\nonumber
+\end{IEEEeqnarray}
+
+To find $R$, we can square both sides of both equations (we know this won't affect answers as we assume $R>0$), and then add them:
+\begin{IEEEeqnarray}{rCl}
+	25 & = & R^2\cos^2{\alpha}
+	\nonumber\\
+	144 & = & R^2\sin^2{\alpha}
+	\nonumber\\
+	169 & = & R^2\cos^2{\alpha} + R^2\sin^2{\alpha}
+	\nonumber\\
+	169 & = & R^2(\cos^2{\alpha} + \sin^2{\alpha})
+	\nonumber\\
+	169 & = & R^2
+	\nonumber\\
+	13 & = & R
+	\nonumber
+\end{IEEEeqnarray}
+
+In practice, we can simply use the coefficients of $\sin{\theta}$ and $\cos{\theta}$ from the question the two short sides of a pythagorean triple to find $R$ without needing to go through the entire process.
+
+To find $\alpha$, we divide the two equations, and then inverse the resulting $\tan$ to get our answer.
+\begin{IEEEeqnarray}{rCl}
+	\frac{12}{5} & = & \frac{R\sin{\alpha}}{R\cos{\alpha}}
+	\nonumber\\
+	\theta & = & \arctan{\frac{12}{5}}
+	\nonumber\\
+	\theta & \approx & 67.4
+	\nonumber
+\end{IEEEeqnarray}
+
+So, as a final answer:
+\begin{equation}
+	5\sin{\theta}+12\cos{\theta} \equiv 13\sin{(\theta+67.4)}
+\end{equation}
+
+In questions, this technique is often used at the start in order to end up solving an equation that you need to put in this form.
