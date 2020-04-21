@@ -1,0 +1,81 @@
+\section{Enthalpy}
+Enthalpy measures the energy stored in a system.
+
+\subsection{Enthalpy change}
+Enthalpy change for a reaction is the difference in the energy held in the bonds of the reactants versus that held in the bonds of the products:
+\begin{equation}
+	\Delta H = H\textrm{(products)} - H\textrm{(reactants)}
+\end{equation}
+
+Conservation of energy, one of the fundamental laws of science, means that this energy must be conserved, and so the difference is either transferred to the surroundings for exothermic reactions where $\Delta H$ is negative, or taken in from them for endothermic reactions where $\Delta H$ is positive.
+
+\subsection{Activation energy}
+Activiation energy is required to start every reaction, even exothermic ones. Just for exothermic reactions the energy released when making bonds in the products is greater than the energy required to break the bonds in the reactants, which often means that after getting started the reaction can provide its own activation energy, for example a fire.
+
+\begin{figure}[ht]
+    \centering
+    \incfig{enthalpy-changes-over-time}
+    \caption{enthalpy changes over time}
+    \label{fig:enthalpy-changes-over-time}
+\end{figure}
+
+\subsection{Standard enthalpy changes}
+Standard enthalpy changes are measured under standard conditions. These are 100kPa of pressure, 298\textdegree Kelvin, and where solutions are concerned their concentration will be 1mol dm$^-3$. Also, the substances will be in their standard states. The sign to indicate standard physical values is \standardstate (a plimsoll, not a lowercase theta).
+
+\subsubsection{Enthalpy of reaction, $\Delta H^{\standardstate}_{r}$}
+The enthalpy change that occurs when the reaction of a stated equation takes place, with the molar amounts indicated in the equation, and all substances in their standard states.
+
+\subsubsection{Enthalpy of formation, $\Delta H^{\standardstate}_{f}$}
+The enthalpy change when one mole of a compound is produced by a reaction, from its constituent elements in standard conditions. Elements have a $\Delta H^{\standardstate}_{f}$ of 0.
+
+\subsubsection{Enthalpy of combustion, $\Delta H^{\standardstate}_{c}$}
+The enthalpy change when one mole of a substance completely combusts (reacts with oxygen) in standard conditions.
+
+\subsection{Enthalpy of neutralisation, $\Delta H^{\standardstate}_{\textrm{neut}}$}
+The enthalpy change when an acid and a base react to form one mole of $\ce{H2O(l)}$ under standard conditions.
+
+\subsection{Calories? (Possibly not on spec)}
+A calorie is equal to 4.18kJ, and the calories on food labelling is actually a kcal.
+
+\subsection{Measuring energy changes}
+Energy changes are calculated with the mass of the substance that's changing temperature, $m$ (in grams), the specific heat capacity of that substance, $c$ (in J g$^{-1}$ K$^{-1}$), and the temperature change, $\Delta T$ (in kelvin). This gives the energy change, $q$:
+\begin{equation}
+	q=mc\Delta T
+\end{equation}
+
+\subsubsection{Enthalpy of combustion of methanol}
+For example the enthalpy change of combustion for some substances, for example alcohols like methanol, can be found experimentally by using a methanol burner to heat water, and using the mass, specific heat capacity, and temperature change of the water, as well as weighing the burner before and after to work out how many moles of methanol were burned. However, this value may be quite inaccurate as it is extremely difficult with this method to stop heat being lost to surroundings other than the water, incomplete combustion or evaporation of the methanol, as well as to ensure perfectly standard conditions.
+
+\subsection{Bond enthalpies}
+The values for bond enthalpies given are averages. This is because the actual bond enthalpies will differ based on different factors. The averages are measured as the average energy required to break one mole of the bond in a gaseous molecule.
+
+\subsection{Hess' law}
+It's not always possible to measure the enthalpy change of a reaction directly. Hess' law states that if a reaction can take place by two routes, then the total enthalpy change of those two routes will be the same. This means that it is possible to form what are called Hess cycles between the reactants, the products, and some other set of substances, and use the known enthalpy chnges to work out an unknown one.
+
+\subsubsection{Using Hess' law with enthalpies of formation}
+Hess' law makes it possible to work out the enthalpy change of a reaction by forming a cycle between the reactants, the products, and all of the substances' constituent elements. With the enthalpy of formation for all of the substances involved, Hess' law can be used because going from the elements to the products must have the same overall enthalpy chagne as going from the elements to the reactants, and then to the products.
+\begin{figure}[ht]
+    \centering
+    \incfig{hess-with-enthalpies-of-formation}
+    \caption{hess with enthalpies of formation}
+    \label{fig:hess-with-enthalpies-of-formation}
+\end{figure}
+
+In general terms rearranging this gives that:
+\begin{equation}
+	\Delta H^{\standardstate}_{r} = \sum \Delta H^{\standardstate}_{f} \textrm(products) - \sum \Delta H^{\standardstate}_{f} \textrm(reactants)
+\end{equation}
+
+\subsubsection{Using Hess' law with enthalpies of combustion}
+Using Hess' law with combustion is a similar process. This time, the same set of substances can be produced by combusting everything on both sides of the reaction, meaning that if all of the enthalpies of combustion are known then this Hess cycle can be used to work out the enthalpy change of the reaction.
+\begin{figure}[ht]
+    \centering
+    \incfig{hess-with-enthalpies-of-combustion}
+    \caption{hess with enthalpies of combustion}
+    \label{fig:hess-with-enthalpies-of-combustion}
+\end{figure}
+
+Again in general terms:
+\begin{equation}
+	\Delta H^{\standardstate}_{r} = \sum \Delta H^{\standardstate}_{c} \textrm(reactants) - \sum \Delta H^{\standardstate}_{c} \textrm(products)
+\end{equation}
