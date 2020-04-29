@@ -1,0 +1,39 @@
+\section{Year 2 Integration}
+\subsection{Integrating standard functions}
+The standard functions and their integrals that need to be known, and that don't appear in the formula book are:
+\begin{IEEEeqnarray}{rCl}
+	\int x^n dx & = & \frac{x^{n+1}}{n+1} + c
+\end{IEEEeqnarray}
+This is the basic case, doing the opposite of differentiating so add one to the power and then divide by it.
+\begin{IEEEeqnarray}{rCl}
+	\int e^x dx & = & e^x + c
+	\\
+	\int \frac{1}{x} dx & = & \ln{|x|} + c
+\end{IEEEeqnarray}
+The modulus is used otherwise we could be taking the log of a negative number.
+\begin{IEEEeqnarray}{rCl}
+	\int \cos{x} dx & = & \sin{x} + c
+	\\
+	\int \sin{x} dx & = & -\cos{x} + c
+\end{IEEEeqnarray}
+
+\subsection{The inverse chain rule}
+The inverse chain rule can be used to integrate functions in the form $f(ax+b)$. It works similarly to the chain rule for differentiation. To use it, integrate the outside function, then divide by the derivative of the inner one. Some examples:
+\begin{IEEEeqnarray}{rCl}
+	\int \cos{(2x+3)} dx & = & \frac{1}{2} \sin{(2x+3)} + c
+	\nonumber\\
+	\int e^{4x+1} dx & = & \frac{e^{4x+1}}{4} + c
+\end{IEEEeqnarray}
+
+\subsection{Using trig identities in integration}
+Sometimes, it may be necessary to use a trig identity in order to transform an integral into one you know how to integrate. For example, $\sin^2x$ can't be integrated with the inverse chain rule because it's not in the form $f(ax+b)$, but we can integrate by using the double angle formula for cos:
+\begin{IEEEeqnarray}{rCl}
+	\cos{2x} & = & \cos^2x - \sin^2x
+	\nonumber\\
+	& = & 1-2\sin^2x
+	\nonumber\\
+	\sin^2x & = & \frac{1}{2}(1-\cos{2x})
+\end{IEEEeqnarray}
+And then it is possible to use the inverse chain rule to integrate.
+
+Using double or compound angle formulae will be common, as well as identities involving reciprocal trig functions. In addition it's important to note that the goal isn't always to get to something that the inverse chain rule can be used for. You may be aiming at something that can be integrated by parts, or a variation on one of the standard integrals (ones given in the formula book and ones not).
