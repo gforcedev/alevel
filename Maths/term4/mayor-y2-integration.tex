@@ -37,3 +37,89 @@ Sometimes, it may be necessary to use a trig identity in order to transform an i
 And then it is possible to use the inverse chain rule to integrate.
 
 Using double or compound angle formulae will be common, as well as identities involving reciprocal trig functions. In addition it's important to note that the goal isn't always to get to something that the inverse chain rule can be used for. You may be aiming at something that can be integrated by parts, or a variation on one of the standard integrals (ones given in the formula book and ones not).
+
+\subsection{Other cases of the inverse chain rule}
+There are two other forms which can be integrated with the reverse chain rule. For some questions, the best method is to try and get the function given into one of these forms so that they can be integrated with the inverse chain rule.
+
+\subsubsection{The form $k\frac{f'(x)}{f(x)}$}
+\begin{equation}
+	\int \frac{f'(x)}{f(x)} = \ln|f(x)|+c
+\end{equation}
+You can think about this by considering what function would differentiate to the expression you're integrating. $\ln|f(x)|$ can be differentiated using the chain rule to give $\frac{1}{f'(x)} \times f(x)$, which is this form. If there's a constant $k$ that's being multiplied, it can be moved outside the integral and adjusted for at the end.
+
+\subsubsection{The form $kf'(x)(f(x))^n$}
+To integrate something in this form, the best way is again to think about what would differentiate to make it. Something in the form $(f(x))^{n+1}$ would differentiate using the chain rule to $(f(x))^n \times f'(x)$, which is the form we're looking for. Again, $k$ can be moved outside the integral and adjusted for at the end.
+
+\subsection{Integration by substitution}
+Integration by substitution is a method of integration which involves changing the variable to a different one (defined as a function of $x$), in order to make the expression possible to integrate.
+
+The most important principle of it is that if $u$ is some function of $x$, then we can find $\frac{du}{dx}$, and thus by flipping it $\frac{dx}{du}$. This is noteworthy because in order to `keep the integration $dx$', we can make $dx$ from $\frac{dx}{du} \times du$.
+
+Here's an example case. Here we've let $u=2x+5$, meaning $\frac{du}{dx}=2$ and so $\frac{dx}{du}=\frac{1}{2}$. It's also important to note the rearrangement that $x=\frac{u-5}{2}$, as we'll need to substitute that in so that there are no instances of $x$ left in the integral. When we're done, we'll sub back in for $x$.
+
+\begin{IEEEeqnarray}{rCl}
+	I & = & \int x\sqrt{2x+5}dx
+	\nonumber\\
+	& = & \int x\sqrt{u} dx
+	\nonumber\\
+	& = & \int x\sqrt{u} \times \frac{dx}{du} du
+	\nonumber\\
+	& = & \int x\sqrt{u} \times \frac{1}{2} du
+	\nonumber\\
+	& = & \int \left(\frac{u-5}{2}\right)\sqrt{u} \times \frac{1}{2} du
+	\nonumber\\
+	& = & \int \frac{u\sqrt{u}-5\sqrt{u}}{2} \times \frac{1}{2} du
+	\nonumber\\
+	& = & \frac{1}{4} \int u^{\frac{3}{2}} -5u^{\frac{1}{2}} du
+	\nonumber\\
+	& = & \frac{1}{4} \left[\frac{2}{5}u^{\frac{5}{2}}-\frac{10}{3}u^{\frac{3}{2}}\right] + c
+	\nonumber\\
+	& = & \frac{1}{4} \left[\frac{2}{5}(2x+5)^{\frac{5}{2}}-\frac{10}{3}(2x+5)^{\frac{3}{2}}\right] + c
+\end{IEEEeqnarray}
+
+\subsubsection{Integration by susbsitution for definite integrals}
+When using this technique for definite integrals, it isn't necessary to subsitute back for $x$ after integration. Instead, the limits can be changed at the beginning by subsituting them into the expression for $u$ as values of $x$, and what you get can be worked out between the two limits in terms of $u$.
+
+\subsection{Integration by parts}
+Integration by parts can be considered as the product rule in reverse, and can be proved starting from the product rule:
+\begin{IEEEeqnarray}{rCl}
+	\frac{d}{dx}(uv) & = & u \frac{dv}{dx} + v \frac{du}{dx}
+	\nonumber\\
+	u \frac{dv}{dx} & = & \frac{d}{dx}(uv) - v \frac{du}{dx}
+	\nonumber\\
+	\int u \frac{dv}{dx} dx & = & \int \frac{d}{dx}(uv) dx - \int v \frac{du}{dx} dx
+	\nonumber\\
+	\int u \frac{dv}{dx} dx & = & uv - \int v \frac{du}{dx} dx
+\end{IEEEeqnarray}
+Written in function notation, and with limits, this would be:
+\begin{equation}
+	\int^a_b uv' dx = [uv]^a_b-\int^a_b u'v dx
+\end{equation}
+This is the integration by parts formula, and is given in the formula booklet.
+
+Using this formula involves deciding what part of the expression to use as $u$ and what part of it to use as $v'$. Generally, if there's an $x$ term, that's good to use as $u$ because you'll end up integrating it to 1 on the right hand side of the formula leaving something easier to integrate.
+
+\subsection{Using partial fractions for integration}
+Sometimes for integration the required method is to turn the expression into partial fractions. Partial fractions make things easier to integrate because they fall into the form $\frac{f'(x)}{f(x)}$ (provided that there's a constant on top and no exponents higher than $x^1$ on the bottom), and so they can be integrated using the reverse chain rule.
+
+\subsection{Finding areas}
+Finding areas between two curves is done in the same way as AS integration, but now the integrals themselves can be much harder to work out. Drawing a diagram can be helpful for these questions if one is not given.
+
+\subsection{The trapezium rule}
+The trapezium rule can be used to work out an approximation of the area under non-integrable curves. It works by splitting that curve into trapezia, and then finding their total area.
+\begin{figure}[ht]
+    \centering
+    \incfig{the-trapezium-rule}
+    \caption{the trapezium rule}
+    \label{fig:the-trapezium-rule}
+\end{figure}
+
+The formula for the area of a trapezium is $\frac{1}{2}(a+b)h$, and from this we can get (and simplify) the formula for the total area of all our trapezia:
+\begin{IEEEeqnarray}{rCl}
+	\int^a_b{y}dx & = & \frac{1}{2}(y_0+y_1)h + \frac{1}{2}(y_1+y_2)h + ... + \frac{1}{2}(y_{n-1}+y_{n})h 
+        \nonumber\\
+        & = & \frac{1}{2}h(y_0+y_1+y_1+y_2+y_2...+y_{n-1}+y_{n-1}+y_{n})
+        \nonumber\\
+        & = & \frac{1}{2}h(y_0+2(y_1+y_2+...+y_{n-1})+y_{n})
+\end{IEEEeqnarray}
+This final version is given in the formula booklet. To apply it in questions, a good plan is to make a table of the $y$ values to show understanding of the formula, as well as clearly defining $h$ as $\frac{b-a}{n}$ where $a$ and $b$ are the upper and lower limit respectively.
