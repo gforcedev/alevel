@@ -1,0 +1,29 @@
+\section{Year 2 Binomial Expansion}
+\subsection{Approximating the expansion of $(1+x)^n$}
+The expansion of $(1+x)^n$ can be approximated from the expansion of $(a+b)^n$ from year 1, by taking a factor of $a^n$ out of the left hand side and dividing by it.
+
+\begin{IEEEeqnarray}{rCl}
+	(a+b)^n & = & \begin{pmatrix}n\\0\end{pmatrix}a^n+\begin{pmatrix}n\\1\end{pmatrix}a^{n-1}b+\begin{pmatrix}n\\2\end{pmatrix}a^{n-1}b^2...
+	\nonumber\\
+	a^n\left(1+\frac{b}{a}\right)^n & = & \frac{n!}{0!(n-0)!}a^n + \frac{n!}{1!(n-1)!}a^{n-1}b + \frac{n!}{2!(n-2)!}a^{n-2}b^2+...
+	\nonumber\\
+	a^n\left(1+\frac{b}{a}\right)^n & = & a^n + na^{n-1}b + \frac{n(n-1)}{2!}a^{n-1}b^2+...
+	\nonumber\\
+	\left(1+\frac{b}{a}\right)^n & = & 1 + n\frac{b}{a} + \frac{n(n-1)}{2!}\times\frac{b^2}{a^2}+...
+\end{IEEEeqnarray}
+
+At this point, we let $x = \frac{b}{a}$, and end up with the answer which is in the formula booklet:
+\begin{equation}
+	(1+x)^n = 1 + nx + \frac{n(n-1)}{2!}x^2 + \frac{n(n-2)}{3!}x^3+...
+\end{equation}
+
+\subsection{Using this approximation}
+For this approximation to hold, it has to be convergent. This means that $|x|<1$, as if this is true then as we keep adding more terms, the higher power of $x$ gets smaller. To improve the approximation when using it, we can either include more terms, or find an expansion which is the same value but has a smaller $x$.
+
+This approximation is useful because it allows for non-natural values of $n$. For some questions, another binomial expansion will need to be put in this form of $(1+x)^n$, where $x$ could be any expression. This will need to be done by taking a factor outside the brackets to be left with 1 and something else, for example, $(2-x)^{-1} = 2\left(1-\frac{x}{2}\right)^{-1}$.
+
+\subsection{Partial fractions and binomial expansion}
+Partial fractions in the form $\frac{a}{bx+c}$ can be written in the form $a(bx+c)^{-1}$, and then transformed into the form $(1+x)^n$, allowing the finding of an approximation of an expression which can be split into partial fractions.
+
+\subsection{Stating the range for which this expansion is valid}
+A common question on this topic is to state the range of a variable for which the expansion is valid. This is the range of the variable that makes the $x$ in $(1+x)^n$ such that $|x|<1$. However, it can sometimes be confusing because the variable in question may also be called $x$, so bear that in mind, or rename to something else to avoid making mistakes.
