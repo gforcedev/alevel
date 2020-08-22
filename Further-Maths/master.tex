@@ -1,0 +1,31 @@
+\documentclass[14pt]{extarticle}
+
+\usepackage{hyperref}
+\usepackage{IEEEtrantools}
+\usepackage{textcomp}
+\usepackage{adjustbox}
+\usepackage{polynom}
+\usepackage{amsmath}
+\usepackage{dsfont}
+% \usepackage{mathbb}
+
+\graphicspath{ {./figures/} }
+
+% for inkscape-figures
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./figures/}{#1.pdf_tex}
+}
+
+\newenvironment{ea}[1][c]{%
+    \setlength{\IEEEnormaljot}{15pt}%
+    \begin{IEEEeqnarray}{#1}%
+}{%
+    \end{IEEEeqnarray}%
+}%
+
+
+% more space between IEEEeqnarray lines
+\begin{document}
+	\include{y12/matrices}
+\end{document}

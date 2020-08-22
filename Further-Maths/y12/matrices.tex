@@ -1,0 +1,87 @@
+\section{Matrices}
+\subsection{Matrix basics}
+A matrix is an array of elements.
+
+\subsubsection{Dimensions}
+We define matrices as being $n$x$m$, where $n$ is the number of rows and $m$ is the number of columns. A vector (can be a row vector or a column vector), has one of its dimensions equal to 1. If $m=n$ then the matrix is a square matrix.
+
+\subsubsection{Special matrices}
+A zero matrix has all elements equal to zero:
+\begin{ea}
+	\begin{pmatrix}0 & 0 & 0 \\ 0 & 0 & 0\end{pmatrix}
+\end{ea}
+
+An identity matrix of a certian dimension, represented by $\mathbf{I_k}$, has 1s on the leading diagonal:
+
+\begin{ea}[rCl]
+	\mathbf{I_2} & = & \begin{pmatrix}1 & 0 \\ 0 & 1\end{pmatrix}
+	\nonumber\\
+	\mathbf{I_3} & = & \begin{pmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1\end{pmatrix}
+\end{ea}
+
+\subsubsection{Some conventions}
+In print, letters representing matrices are usually bolded. When handwritten, they're often underlined. Most matrix letters are also capitalised.
+
+\subsection{Operations of matrices}
+\subsubsection{Addition and subtraction}
+Adding and subtracting can be done on matrices of the same dimensions. If two matrices are the same dimensions they're said to be additively conformable. The corresponding elements are added or subtracted.
+\begin{ea}[rCl]
+	\begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix} +
+	\begin{pmatrix}5 & 6 \\ 7 & 8\end{pmatrix} & = &
+	\begin{pmatrix}6 & 8 \\ 10 & 12\end{pmatrix}
+\end{ea}
+
+\subsubsection{Multiplying by scalars}
+Matrices can be multiplied by scalars by multiplying every element by the scalar.
+\begin{ea}[rCl]
+	\begin{pmatrix}1 & 2 \\ 3 & 4\end{pmatrix}
+	\times 2 & = &
+	\begin{pmatrix}2 & 4 \\ 6 & 8\end{pmatrix}
+\end{ea}
+
+\subsection{Matrix multiplication}
+\subsubsection{Dimensions and requirements}
+Matrices can be multiplied if the number of columns of the first is equal to the number of rows of the second. The product matrix will have dimensions of the number of rows of the first matrix, and the number of the columns of the second. It's easiest to think of it like:
+\begin{ea}[lCr]
+	(n_1\times m_1) & \times & (n_2\times m_2)
+\end{ea}
+The inner two must be equal for it to be possible, and the outer two will be the dimensions of the result. If the requirements are met, the two matrices are said to be multiplicatively conformable.
+
+\subsubsection{Actually multiplying matrices}
+To multiply matrices, multiply the elements in each row by the elements from the corresponding column, moving down one at a time:
+\begin{ea}[rCl]
+	\begin{pmatrix}a & b \\ c & d\end{pmatrix} \times
+	\begin{pmatrix}e & f \\ g & h\end{pmatrix} & = &
+	\begin{pmatrix}ae + bg & af + bh \\ ce + dg & cf + dh\end{pmatrix}
+\end{ea}
+
+Note that this means matrix multiplication is non-commutative. It may only be possible one way round, and if it's possible either way then $\mathbf{AB}$ does not necessarily equal $\mathbf{BA}$.
+
+\subsection{Determinants}
+The determinant of a matrix is a scalar, and it only exists if the matrix is square. It can be notated in a few ways:
+\begin{ea}
+	|\mathbf{M}| = \det \mathbf{M} = \left|\begin{pmatrix}a & b \\ c & d\end{pmatrix}\right|
+\end{ea}
+
+\subsubsection{Singular matrices}
+If $|\mathbf{M}|=0$, then $\mathbf{M}$ is a singular matrix. Otherwise, it's non-singular.
+
+\subsubsection{Determinants of 2x2 matrices}
+The determinant of a 2x2 matrix is the product of the leading diagonal, minus the product of the other diagonal.
+\begin{ea}[rCl]
+	\left|\begin{pmatrix}a & b \\ c & d\end{pmatrix}\right| & = &
+	ad - bc
+\end{ea}
+
+\subsubsection{Determinants of 3x3 matrices}
+The determinant of a 3x3 matrix is found by going along the top row, and alternately adding and subtracting the element multiplied by its minor.
+
+The minor of an element is the determinant of the matrix that would be found if that element's row and column were crossed out.
+\begin{ea}[rCl]
+	\left|\begin{pmatrix}
+		a & b & c \\ d & e & f \\ g & h & i
+	\end{pmatrix}\right| & = &
+	a\left|\begin{pmatrix}e & f \\ h & i \end{pmatrix}\right| -
+	b\left|\begin{pmatrix}a & f \\ g & i \end{pmatrix}\right| +
+	c\left|\begin{pmatrix}d & e \\ g & h \end{pmatrix}\right|
+\end{ea}

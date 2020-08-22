@@ -12,4 +12,12 @@ Chemistry/*/*
 !Chemistry/figures/*
 !Chemistry/*/*.tex
 
+
+Further-Maths/*
+!Further-Maths/master.tex
+!Further-Maths/*/
+Further-Maths/*/*
+!Further-Maths/figures/*
+!Further-Maths/*/*.tex
+
 release*
