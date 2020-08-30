@@ -1,0 +1,82 @@
+\section{Complex Numbers}
+The complex numbers are another set of numbers, which encompass all the numbers see so far:
+
+\begin{itemize}
+	\item $\mathbb{N}$ represents the natural numbers, or positive integers.
+	\item $\mathbb{Z}$ represents the integers.
+	\item $\mathbb{Q}$ represents the rational numbers, or all numbers which can be expressed as fractions.
+	\item $\mathbb{R}$ represents the real numbers, which includes irrational numbers such as $\pi$ and $e$.
+\end{itemize}
+
+All of these sets include all of the ones above them. In a similar way, the complex numbers, $\mathbb{C}$, include all of these sets. Complex numbers can be thought of on a 2-dimensional number line with a real axis and an imaginary axis.
+
+\subsection{The complex unit}
+The complex unit, $i$, is equal to $\sqrt{-1}$. In this fashion:
+
+\begin{ea}[rCl]
+	\sqrt{-25} & = & \sqrt{-1 \times 25}
+	\nonumber\\
+			   & = & \sqrt{-1} \times \sqrt{25}
+	\nonumber\\
+			   & = & 5i
+	\nonumber\\
+	\sqrt{-100} & = & 10i
+	\nonumber\\
+	i^2 & = & -1
+\end{ea}
+
+\subsection{Writing complex numbers}
+Complex numbers, usually represented by $z$, can be expressed in the form $a+bi$, where $a,b \in \mathbb{R}$. In this form then $a$ is referred to as the real part, while $b$ is called the imaginary part. They can have various operations done on them in a logical way:
+\begin{ea}[rCl]
+	(3+4i)+(5-3i) & = & 8+i
+	\nonumber\\
+	(4+2i)(3-i) & = & 12 + 2i - 2i^2
+	\nonumber\\
+				& = & 14 + 2i
+\end{ea}
+
+\subsection{Realising the denominator}
+It's possible to multiply two complex numbers together and have them give an answer which only has a real part. This can be useful when there's a complex number on the bottom of a fraction, or simply used to express the division of complex numbers nicely:
+
+\begin{ea}[rCl]
+	1 \div (1-2i)
+	\nonumber\\
+	& = & \frac{1}{1-2i}
+	\nonumber\\
+	& = & \frac{1(1+2i)}{(1-2i)(1+2i)}
+	\nonumber\\
+	& = & \frac{1+2i}{5}
+	\nonumber\\
+	& = & \frac{1}{5} + \frac{2}{5}i
+\end{ea}
+
+\subsection{Complex conjugates}
+The complex conjugate of a number is the same number, with the imaginary part multiplied by -1. So if $z=a+bi$, then its complex conjugate $z^*=a-bi$. These together are referred to as a conjugate pair. They can be useful because $z+z^*=2a$, and $zz^*=a^2+b^2$, both of which use an operation to give a real result out of the two imaginary numbers.
+
+\subsection{Complex powers}
+The powers of $i$ go in a cycle:
+\begin{ea}[rCl]
+	i^1 & = & i
+	\nonumber\\
+	i^2 & = & -1
+	\nonumber\\
+	i^3 & = & -i
+	\nonumber\\
+	i^4 & = & 1
+	\nonumber\\
+	i^5 & = & i
+\end{ea}
+This cycle has a period of 4, and so we can divide any power of $i$ by 4 and use the remainder to see what the power of $i$ it's equal to.
+
+\subsection{Imaginary roots of quadratics}
+For any quadratic $f(z)$, then if $z_1$ is a root, then $z_1^*$ must necessarily also be a root. One convention is to let $z_1=\alpha$, and $z_1^*=\beta$. Then:
+
+\begin{ea}[rCl]
+	(z-\alpha)(z-\beta) & = & 0
+	\nonumber\\
+	z^2 -\alpha z - \beta z + \alpha \beta & = & 0
+	\nonumber\\
+	z^2 - z(\alpha + \beta) + \alpha \beta & = & 0
+\end{ea}
+
+Which means to represent the quadratic in the form $ax^2+bx+c$ then $b=\alpha + \beta$ and $c=\alpha \beta$.
