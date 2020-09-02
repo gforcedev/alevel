@@ -1,0 +1,39 @@
+\section{Argand diagrams}
+Argand diagrams can be thought of like a number line in 2d, or like a set of cartesian axes with the $x$-axis as the real axis and the $y$-axis as the imaginary axis. Complex numbers can be plotted as such.
+
+\subsection{Representing addition}
+Addition can be represented geometrically with an argand diagram. To represent adding $z_1=1+i$ and $z_2=3-2i$, then moving the point $(1,1)$ by the vector $\begin{pmatrix}3\\-2\end{pmatrix}$ gives the answer, as does starting from the origin and moving by the position vectors of both the points. This is called the parallelogram law as it works either way round because addition is commutative.
+
+\subsection{Modulus and argument}
+\subsubsection{Modulus}
+The modulus of a complex number $z=a+bi$, represented by $|z|$, is given by $\sqrt{a^2+b^2}$. It is the same as the difference from $O$ to $z$ on an argand diagram. The argument of a complex number is the angle in radians between the real axis, and the complex number's vector, measured anticlockwise (this means angles below the line will be negative). It is notated as $\arg(z)$. For $z=a+bi$, then its argument $\theta$ satisfies $\tan \theta = \frac{b}{a}$. As this could be any number of values because of tan's repeating nature, we define the principle argument as the one in the range $-\pi < \theta \leq \pi$.
+
+\subsubsection{Operations on numbers in modulus-argument form}
+Multiplying and dividing complex numbers in modulus-argument form can be helpful:
+
+\begin{ea}[rCl]
+	|z_1 \times z_2| & = & |z_1| \times |z_2|
+	\nonumber\\
+	\arg(z_1 \times z_2) & = & \arg(z_1) + \arg(z_2)
+	\nonumber\\
+	\left|\frac{z_1}{z_2}\right| & = & \frac{|z_1|}{|z_2|}
+	\nonumber\\
+	\arg\left(\frac{z_1}{z_2}\right) & = & \arg(z_1) - \arg(z_2)
+\end{ea}
+
+\subsection{Going from modulus-argument form to cartesian form}
+If the modulus of a complex number is $r$ and the argument is $\theta$, then in cartesian form the number, $z$, is equal to $r(\cos \theta + i \sin \theta)$.
+
+\subsection{Loci in argand diagrams}
+
+\subsubsection{Circles}
+If we consider any complex number with a modulus of 1, then all the possible points form a circle around the origin on an argand diagram. If we were to say that the distance between a general point and a fixed point is constant, then this would represent a circle around the fixed point we chose. So to represent a circle as a locus on an argand diagram, we say $|z-z_1|=r$, where $r$ is the radius of the circle and $z_1$ is its center.
+
+\subsubsection{Perpendicular bisectors}
+If we have two defined fixed points, and consider all the points where the distance between the general point and both of the fixed points is equal, we have the line perpendicularly bisecting our two points. This can be represented with a locus on an argand diagram by saying $|z-z_1|=|z-z_2|$, where $z_1$ and $z_2$ are the fixed points being bisected.
+
+\subsubsection{Half lines}
+We can use the argument of complex numbers in these loci also. If we consider the a fixed point, then it is possible to define a locus for all of the points with a certain angle between the fixed point and the general point, which would define a half line. This is done with $\arg(z-z_1)=\theta$, where $\theta$ is the angle in question and $z_1$ is the fixed point.
+
+\subsubsection{Regions}
+By using inequalities as opposed to equals signs, it's possible to define regions lying inside or outside these various loci on argand diagrams.
