@@ -1,0 +1,119 @@
+\section{Linear transformations}
+A linear transformation is any transformation that only involves linear terms in $x$ and $y$. One useful case to know is that they always move the origin to itself.
+
+Any linear transformation can be defined as its effect on the coordinate vectors $\begin{pmatrix}1 \\ 0 \end{pmatrix}$ and $\begin{pmatrix}0 \\ 1 \end{pmatrix}$. This is because $\begin{pmatrix}a & b \\ c & d\end{pmatrix}$ maps $\begin{pmatrix}1 \\ 0 \end{pmatrix}$ to $\begin{pmatrix}a \\ c \end{pmatrix}$ and $\begin{pmatrix}0 \\ 1 \end{pmatrix}$ to $\begin{pmatrix}b \\ d \end{pmatrix}$.
+
+Points mapped to themselves by a transformation are invariant points. There is also the term invariant line. However, it's important to note that an invariant line isn't necessarily the same as a line of invariant points. Multiplying the $y$-coordinate of every point on a line by -1 would mean it was an invariant line, but all the points themselves would have changed position.
+
+\subsection{Representing linear transformations in 2d}
+A 2d position vector can be multiplied by another 2x2 matrix to represent a linear transformation.
+\begin{ea}[rCl]
+	\begin{pmatrix}a & b \\ c & d\end{pmatrix}
+	\begin{pmatrix}x \\ y\end{pmatrix}
+	& = &
+	\begin{pmatrix}ax + by \\ cx + dy\end{pmatrix}
+\end{ea}
+
+One example could be the transformation mapping $\begin{pmatrix}x \\y \end{pmatrix} \mapsto \begin{pmatrix}12y-2x \\ x \end{pmatrix}$, which can be represented as $\begin{pmatrix}-2 & 12 \\ 1 & 0\end{pmatrix}$
+
+\subsection{Representing reflections}
+\subsubsection{Reflection in the $y$-axis}
+\begin{itemize}
+	\item Represented as $\begin{pmatrix}-1 & 0 \\ 0 & 1\end{pmatrix}$.
+	\item Invariant points are anything on the $y$-axis.
+	\item Invariant lines are $x=0$, and $y=k,k \in \mathbb{R}$.
+\end{itemize}
+
+\subsubsection{Reflection in the $x$-axis}
+\begin{itemize}
+	\item Represented as $\begin{pmatrix}1 & 0 \\ 0 & -1\end{pmatrix}$.
+	\item Invariant points are anything on the $x$-axis.
+	\item Invariant lines are $y=0$, and $x=k,k \in \mathbb{R}$.
+\end{itemize}
+
+
+\subsubsection{Reflection in the line $y=x$}
+\begin{itemize}
+	\item Represented as $\begin{pmatrix}0 & 1 \\ 1 & 0\end{pmatrix}$.
+	\item Invariant points are anything on the line $y=x$.
+	\item Invariant lines are $y=x$, and $y=-x+k,k \in \mathbb{R}$.
+\end{itemize}
+
+\subsubsection{Reflection in the line $y=-x$}
+\begin{itemize}
+	\item Represented as $\begin{pmatrix}0 & -1 \\ -1 & 0\end{pmatrix}$.
+	\item Invariant points are anything on the line $y=-x$.
+	\item Invariant lines are $y=-x$, and $y=x+k,k \in \mathbb{R}$.
+\end{itemize}
+
+\subsection{Representing rotations about the origin}
+Rotations about the origin by 90, 180, and 270 degrees are represented by $\begin{pmatrix}0 & -1 \\ 1 & 0\end{pmatrix}$, $\begin{pmatrix}-1 & 0 \\ 0 & -1\end{pmatrix}$, and $\begin{pmatrix}0 & 1 \\ -1 & 0\end{pmatrix}$ respectively. Their periodicity, and the fact that their leading diagonal is always equal while the other diagonal is multiplied by -1 between, hints at the general rotation matrix, which in fact is $\begin{pmatrix}\cos \theta & -\sin \theta \\ \sin \theta & \cos \theta \end{pmatrix}$.
+
+\subsection{Stretches}
+Stretches are fairly straightforward, using the matrix $\begin{pmatrix}a & 0 \\ 0 & b \end{pmatrix}$ to map $\begin{pmatrix}1 \\ 0\end{pmatrix}$ onto $\begin{pmatrix}a \\ 0\end{pmatrix}$ and map $\begin{pmatrix}0 \\ 1\end{pmatrix}$ to $\begin{pmatrix}0 \\ b\end{pmatrix}$. So a stretch of $a$ in the $x$-direction, and a stretch of $b$ in the $y$-direction. If $a=b$, then this is an enlargement scale factor $a$ about the origin.
+
+\subsubsection{Invariant points for stretches}
+If $a=1$, then all points on the $x$-axis are invariant, and $y=k,k \in \mathbb{R}$ is an invariant line. If $b=1$, then all points on the $y$-axis are invariant, and $x=k,k \in \mathbb{R}$ is an invariant line. For all stretches then the origin is an invariant point, and the $x$ and $y$ axes are invariant lines.
+
+\subsubsection{Relating stretches to determinants}
+The determinant of a stretch matrix is the scale factor the area of a shape is stretched to. This is because the determinant of the matrix $\begin{pmatrix}a & 0 \\ 0 & b \end{pmatrix}$ is $ab$. Another way to think of it is the unit square gets transformed to a rectangle with base $a$ and height $b$. If $a$ or $b$ are negative, then of course the shape has been reflected, rather than now having negative area.
+
+\subsection{Successive transformations}
+A product of matrices represents the product of two transformations. The product matrix $\mathbf{AB}$ represents applying the transformation represented by $\mathbf{B}$, followed by that of $\mathbf{A}$, because of matrix associativity:
+\begin{ea}
+	(\mathbf{AB})\mathbf{x} = \mathbf{ABx} = \mathbf{A}(\mathbf{Bx})
+\end{ea}
+
+\subsection{Linear transformations in 3 dimensions}
+These follow the familiar pattern of ``like 2d, but with an extra dimensions'', so the explanation of how the concept works relates 2d concepts to their 3d counterparts.
+
+\subsubsection{Coordinate planes}
+In two dimensions, $x=0$ and $y=0$ are the coordinate axes. In three dimensions, we instead have $x=0$, $y=0$, and $z=0$ representing coordinate planes.
+
+\subsubsection{3x3 matrices for 3d transformations}
+3d transformations can be thought of as where they map the unit cube to, with each column in a matrix like $\begin{pmatrix}1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$ behaving similar to how things work in 2d and mapping each of the unit points.
+
+\subsubsection{Reflections in coordinate planes}
+Reflecting in the coordinate plane $x=0$ would flip the $x$-coordinate, but keep the other two coordinates the same. The matrix to represent this would be $\begin{pmatrix}-1 & 0 & 0 \\ 0 & 1 & 0 \\ 0 & 0 & 1 \end{pmatrix}$
+
+\subsubsection{Rotations around axes}
+In three dimensions, then rotations happen about lines rather than about points. For rotations around the different axes, then they can be thought of as if we're looking from the positive end of that axis, towards the origin. This means we would be seeing the other two axes in a sort of 2d view, directly top-down.
+
+Rotating a point about its axis doesn't move it. So, for example, rotating a point around the $x$-axis doesn't move the point $(1, 0, 0)$, and doesn't change the $x$-coordinate of any other point. This allows the deduction that the matrix will look something like:
+\begin{ea}
+	\begin{pmatrix}
+		1 & 0 & 0 \\
+		0 & ? & ? \\
+		0 & ? & ?
+	\end{pmatrix}
+\end{ea}
+
+The parts concerning the other two axes can be thought of in that 2d, top-down fashion as mirroring the 2x2 rotation matrix, and so the final product for a rotation $\theta$ degrees anticlockwise about the $x$-axis is:
+\begin{ea}
+	\begin{pmatrix}
+		1 & 0 & 0 \\
+		0 & \cos \theta & -\sin \theta \\
+		0 & \sin \theta & \cos \theta
+	\end{pmatrix}
+\end{ea}
+
+For the $z$-axis:
+\begin{ea}
+	\begin{pmatrix}
+		\cos \theta & -\sin \theta & 0 \\
+		\sin \theta & \cos \theta & 0 \\
+		0 & 0 & 1
+	\end{pmatrix}
+\end{ea}
+
+For the $y$-axis, the starting positions are different, as looking in 2 dimensions directly in from the positive $y$ has the $x$-axis going from positive on the left to negative on the right. This means that the $-\sin$ and the $\sin$ are flipped from what might be expected, giving:
+\begin{ea}
+	\begin{pmatrix}
+		\cos \theta & 0 & \sin \theta \\
+		0 & 1 & 0 \\
+		-\sin \theta & 0 & \cos \theta
+	\end{pmatrix}
+\end{ea}
+
+\subsection{Inverses of linear transformations}
+$\mathbf{A}^{-1}$ represets the reverse transofmation of the one represented by $\mathbf{A}$, provided $\mathbf{A}$ is non-singular. If a transformation is self-inverse, multiplying the matrix by itself with give the identity matrix.
