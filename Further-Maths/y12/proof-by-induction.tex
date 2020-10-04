@@ -1,0 +1,54 @@
+\section{Proof by induction}
+Proof by induction is used for proofs with natural numbers. It works by a kind of ``domino'' effect. The steps are to show the given statement works for a base case (usually where $n=1$), and then show that if it works for one case, it must also work for the case directly above, thus proving the statement for all numbers above the base case.
+
+\subsection{Example proof}
+Proof that $\forall n \in \mathbb{Z}_1, \sum^{n}_{r=1}{r^2}=\frac{n}{6}(n+1)(2n+1)$ (referred to as *):
+
+\subsubsection{Base case ($n=1$)}
+\begin{ea}[rCl]
+	\text{LHS} & = & \sum^{1}_{r=1}{r^2}
+	\nonumber\\
+			   & = & 1^2
+	\nonumber\\
+			   & = & 1
+	\nonumber\\
+	\text{RHS} & = & \frac{(1)}{6}((1)+1)((1)+2)
+	\nonumber\\
+			   & = & \frac{1}{6} \times 2 \times 3
+	\nonumber\\
+			   & = & 1
+	\nonumber\\
+			   & = & \text{LHS}
+\end{ea}
+So * holds for $n=1$.
+
+\subsubsection{Assumption ($n=k$)}
+Assume * works for some $k \in \mathbb{N}_1$, so:
+\begin{ea}
+	\sum^{k}_{r=1}{r^2}=\frac{k}{6}(k+1)(2k+1)
+\end{ea}
+(referred to as A).
+
+\subsubsection{Inductive step ($n=k+1$)}
+Aim to show * holds for $k+1$, so:
+\begin{ea}[rCl]
+	\sum^{(k+1)}_{r=1}{r^2} & = & \frac{(k+1)}{6}((k+1)+1)(2(k+1)+1)
+	\nonumber\\
+							& = & \frac{k+1}{6}(k+2)(2k+3)
+\end{ea}
+
+Then show it:
+\begin{ea}[rCl]
+	\sum^{(k+1)}_{r=1}{r^2} & = & \sum^{(k)}_{r=1}{r^2} + (k+1)^2
+	\nonumber\\
+	& = & \frac{k}{6}(k+1)(2k+1) + (k+1)^2
+	\nonumber\\
+	& = & (k+1)\left(\frac{k}{6}(2k+1) + (k+1)\right)
+	\nonumber\\
+	& = & (k+1)\left(2k^2+7k+6\right)
+	\nonumber\\
+	& = & (k+1)(k+2)(2k+3)
+\end{ea}
+
+\subsubsection{Conclusion}
+* holds for $n=1$. If * holds for some case $n=k$, it also holds for $n=k+1$. Hence, by induction, * holds $\forall n \in \mathbb{N}_1$.
