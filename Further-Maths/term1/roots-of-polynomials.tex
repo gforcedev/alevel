@@ -1,0 +1,108 @@
+\section{Roots of polynomials}
+\subsection{Conjugate pairs of roots}
+If the complex number $a+bi$ is the root of a polynomial, its conjugate $a-bi$ must also necessarily be one. This means that for quadratics, there can be zero or two real roots. For cubics, there can be either three real roots, or two imaginary and one real. For quartics, there could be zero, two, or four imaginary roots, and the same with real roots (although real roots could be repeated).
+
+\subsection{Roots of quadratics}
+Considering the general quadratic $az^2+bz+c$, with roots $\alpha and \beta$, then we know that:
+\begin{ea}[rCl]
+	az^2+bz+c & = & a(x-\alpha)(x-\beta)
+	\nonumber\\
+			  & = & a(z^2-(\alpha+\beta)z+\alpha\beta)
+	\nonumber\\
+			  & = & az^2-a(\alpha+\beta)z+a\alpha\beta
+\end{ea}
+
+Equating coefficients and dividing by $a$ gives us two key identities for quadratics:
+\begin{ea}[rCl]
+	\alpha + \beta & = & \frac{-b}{a}
+	\\
+	\alpha\beta & = & \frac{c}{a}
+\end{ea}
+
+\subsection{Roots of cubics}
+By using a similar technique to above (considering the general cubic $az^3+bz^2+cz+d=a(z-\alpha)(z-\beta)(z-\gamma)$, expanding the right hand side, equating coefficients of each power of $z$, and dividing by $a$), we get three key identities for cubics:
+\begin{ea}[rCl]
+	\alpha + \beta + \gamma & = & \frac{-b}{a}
+	\\
+	\alpha\beta + \alpha\gamma + \beta\gamma & = & \frac{c}{a}
+	\\
+	\alpha\beta\gamma & = & \frac{-d}{a}
+\end{ea}
+
+\subsection{Roots of quartics}
+Doing the same thing for the general quartic $az^4+bz^3+cz^2+dz+e=a(z-\alpha)(z-\beta)(z-\gamma)(z-\delta)$ follows in the same pattern, and gives:
+\begin{ea}[rCl]
+	\alpha + \beta + \gamma + \delta & = & \frac{-b}{a}
+	\\
+	\alpha\beta + \alpha\gamma + \alpha\delta + \beta\gamma + \beta\delta + \gamma\delta & = & \frac{c}{a}
+	\\
+	\alpha\beta\gamma + \alpha\beta\delta + \alpha\gamma\delta + \beta\gamma\delta & = & \frac{-d}{a}
+	\\
+	\alpha\beta\gamma\delta & = & \frac{e}{a}
+\end{ea}
+
+\subsection{Notation for the roots of polynomials}
+A nice notational shortcut that applies to polynomials of any degree:
+\begin{itemize}
+	\item The ``sum of roots'', notated as $\sum{\alpha}$, is equal to $\frac{-b}{a}$
+	\item The ``pair sum'', notated as $\sum{\alpha\beta}$, is equal to $\frac{c}{a}$
+	\item The ``triple sum'', notated as $\sum{\alpha\beta\gamma}$, is equal to $\frac{-d}{a}$
+	\item This pattern continues, up to the ``quadruple sum'' (or just the ``product'' for quartics) is the highest which is required knowledge for this spec.
+\end{itemize}
+
+\subsection{Rules for roots of polynomials}
+There are certain expressions relating different ones of these sums used for questions. Most can be worked out on the fly, but being familiar with them can speed up and help spot tricks in some trickier questions.
+
+\subsubsection{The rules for reciprocals}
+In a quadratic:
+\begin{ea}
+	\frac{1}{\alpha}+\frac{1}{\beta}=\frac{\alpha+\beta}{\alpha\beta}
+\end{ea}
+
+In a cubic:
+\begin{ea}
+	\frac{1}{\alpha}+\frac{1}{\beta}+\frac{1}{\gamma}=\frac{\alpha\beta+\alpha\gamma+\beta\gamma}{\alpha\beta\gamma}
+\end{ea}
+In a quartic:
+\begin{ea}
+	\frac{1}{\alpha}+\frac{1}{\beta}+\frac{1}{\gamma}+\frac{1}{\delta}=\frac{\alpha\beta\gamma + \alpha\beta\delta + \alpha\gamma\delta + \beta\gamma\delta}{\alpha\beta\gamma\delta}
+\end{ea}
+
+This can be remembered as ``degree-minus-one sum over product''.
+
+\subsubsection{Rules for sums of squares}
+In a quadratic:
+\begin{ea}
+	\alpha^2 + \beta^2 = (\alpha+\beta)^2 - 2\alpha\beta
+\end{ea}
+
+In a cubic:
+\begin{ea}
+	\alpha^2 + \beta^2 + \gamma^2 = (\alpha+\beta+\gamma)^2 - 2(\alpha\beta + \alpha\gamma + \beta\gamma)
+\end{ea}
+
+In a quartic:
+\begin{ea}[rCl]
+	\alpha^2 + \beta^2 + \gamma^2 + \delta^2 & = & (\alpha+\beta+\gamma+\delta)^2
+	\nonumber\\
+	&&- 2(\alpha\beta + \alpha\gamma + \alpha\delta + \beta\gamma + \beta\delta + \gamma\delta)
+\end{ea}
+
+This can be remembered as ``sum squared minus two times pair sum''.
+
+\subsubsection{Rules for sums of cubes}
+This one is only required for quadratics and cubics, and is definitely worth remembering rather than working out on the fly.
+
+In a quadratic:
+\begin{ea}
+	\alpha^3 + \beta^3 = (\alpha + \beta)^3 - 3(\alpha+\beta)(\alpha\beta)
+\end{ea}
+
+In a cubic:
+\begin{ea}[rCl]
+	\alpha^3 + \beta^3 + \gamma^3 & = & (\alpha + \beta + \gamma)^3
+	\nonumber\\
+	&&- 3(\alpha+\beta+\gamma)(\alpha\beta + \alpha\gamma + \beta\gamma) + 3\alpha\beta\gamma
+\end{ea}
+
+This can be remembered as ``sum cubed minus three sum double (plus three triple for cubics)''.
