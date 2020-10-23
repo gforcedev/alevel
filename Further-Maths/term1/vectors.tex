@@ -1,0 +1,169 @@
+\section{Vectors}
+\subsection{Equation of a line in 3 dimensions}
+A line in three dimensions can be defined in two parts: a point on the line, and its direction. This works in 2d as well. A line can be thought of in 2d as its gradient (direction), and its y-intercept, or actually just any point on the line.
+
+This means that the equation of a line in 3d has two parts. First, the position vector of a point on the line, and second, a direction vector, with a variable in front of it. This direction vector can be of any magnitude, pointing either forwards or backwards on the line, and thus the constant, often $\lambda$, can be adjusted to give any point on the line. This means that the equation of a line in 3d is of the form:
+
+\begin{ea}
+	\mathbf{r} = \mathbf{a}+\lambda \mathbf{b}
+\end{ea}
+
+Another form of this (and often the most useful form for doing questions), is to combine these into one vector giving something like:
+
+\begin{ea}
+	\mathbf{r} = \begin{pmatrix}a_1+\lambda b_1\\a_2+\lambda b_2\\a_3 + \lambda b_3\end{pmatrix}
+\end{ea}
+
+Where $r$ is the position vector of a general point on the line, $a$ is the position vector of any specific point on the line, and $b$ is the direction vector. $\lambda$ is a scalar parameter. An interesting point to note is that every line  has an infinite number of equations in this form, because $a$ could be changed with any other point on the line, and $b$ could be multiplied by any scalar, and the new equation would still be defining the same line.
+
+\subsubsection{Equation of a line passing between two points}
+When finding the equation of a line passing between two points, you're looking for the equation of the line and so two things: a point on the line, and a direction vector. For the first, you already have two points on the line, and so either one can be chosen. For the second, then simply work out the vector going between the two given points, and you hvae an answer. This means the vector equation of the line going between two points $C$ and $D$, with position vectors $\mathbf{c}$ and $\mathbf{d}$ respectively, is:
+
+\begin{ea}
+	\mathbf{r} = \mathbf{c} + \lambda(\mathbf{d}-\mathbf{c})
+\end{ea}
+
+\subsection{Equation of a 3d line in cartesian form}
+In cartesian form (in terms of $x$, $y$, and $z$), then the equation of a line in 3d looks a bit different. If the vector form of the equation is $\mathbf{r} = \mathbf{a}+\lambda \mathbf{b}$, where $\mathbf{a}=\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix}$, and $\mathbf{b}=\begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}$, then in cartesian form the equation of the line is:
+
+\begin{ea}
+	\frac{x-a_1}{b_1} = \frac{x-a_2}{b_2} = \frac{x-a_3}{b_3}
+\end{ea}
+
+This can sort of be thought about by the top of those fractions being the $x$, $y$, or $z$ distance from the fixed point to the general point, and these all having to be in the same ratio with the direction vector of the line.
+
+\subsection{Equation of a plane in 3d}
+The equation of a plane is actually quite similar in rationale to the equation of a line, in that it begins with the position vector of a point on the plane. However, this time, we require two vectors instead of one direction vector. These vectors have to both be parallel to the plane, but not parallel to each other. This way, multiples of them can be used to get from any point on the plane to any other, giving the equation of a plane in vector form as:
+
+\begin{ea}
+	\mathbf{r} = \mathbf{a} + \lambda\mathbf{b} + \mu\mathbf{c}
+\end{ea}
+
+Where $\mathbf{r}$ is a general point on the plane $\mathbf{a}$ is the position vetor of a specific point on the plane, and $\mathbf{b}$ and $\mathbf{c}$ are non-zero, non-parallel vectors which are parallel to the plane.
+
+\subsection{Equation of a plane in cartesian form}
+Another way that a plane can be defined is with a normal vector. However, more information than this is needed, because each normal vector is shared by an infinite number of planes, which are parallel to each other and perpendicular to the normal vector in question. This means, to define a plane uniquely, we need more information. For this form of equation, that extra info takes the form of the scalar $d$, and the form is:
+
+\begin{ea}
+	ax+by+cz=d
+\end{ea}
+
+Where $a, b, c$, and $d$ are constants and $\begin{pmatrix}a\\b\\c\end{pmatrix}$ is a normal vector to the plane. It's interesting to note that this is similar to the cartesian equation of a line in 2d (planes can be thought of in some ways as 3d lines), which would be $y=mx+c$, or $ay+bx=c$.
+
+\subsection{The scalar product (dot product)}
+\subsubsection{Definition}
+The dot product of two vectors is useful because it allows finding the angle between them. It's written $\mathbf{a} \cdot \mathbf{b}$, and is defined as follows:
+\begin{ea}
+	\mathbf{a} \cdot \mathbf{b} = |\mathbf{a}||\mathbf{b}|\cos\theta
+\end{ea}
+Where $\theta$ is the angle between $\mathbf{a}$ and $\mathbf{b}$ which they both face away from.
+
+\subsubsection{Interesting results}
+Some interesting results for this are that if the vectors are parallel, then $\cos\theta=1$ and so the dot product just comes out as $|\mathbf{a}||\mathbf{b}|$. In particular, $\mathbf{a} \cdot \mathbf{a} = |\mathbf{a}|^2$. If the vectors are perpendicular, then $\theta=\pi$, and so $\cos\theta$ and the dot product are both zero.
+
+\subsubsection{Computing the dot product}
+The dot product is actually incredibly quick to work out, simply by multiplyig corresponding elements of the vectors together. The proof of this uses the idea that the dot product can here be essentially thought of to work like multiplication in terms of expanding and factorising brackets. It also uses the fact that dotting perpendicular vectors gives zero to cancel a large number of terms, and the fact that dotting parallel vectors is the same as multiplying their magnitudes in the last step.
+
+\begin{ea}[rCl]
+	\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} \cdot \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}
+	& = & (a_1\mathbf{i}+a_2\mathbf{j}+a_3\mathbf{k}) \cdot (b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k})
+	\nonumber \\
+	& = & a_1\mathbf{i} \cdot (b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k})
+	\nonumber\\
+	& & + a_2\mathbf{j} \cdot (b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k})
+	\nonumber\\
+	& & + a_3\mathbf{k} \cdot (b_1\mathbf{i}+b_2\mathbf{j}+b_3\mathbf{k})
+	\nonumber\\
+	& = & a_1\mathbf{i} \cdot b_1\mathbf{i} + a_2\mathbf{j} \cdot b_2\mathbf{j} + a_3\mathbf{k} \cdot b_3\mathbf{k}
+	\nonumber\\
+	& = & a_1b_1 + a_2b_2 + a_3b_3
+\end{ea}
+
+So this means that as well as the earlier definition, the dot product can be worked out as:
+\begin{ea}
+	\begin{pmatrix}a_1\\a_2\\a_3\end{pmatrix} \cdot \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix}
+	=  a_1b_1 + a_2b_2 + a_3b_3
+\end{ea}
+
+\subsubsection{Using the dot product}
+The definition for the dot product, and this method of working it out, can be combined to give the angle between two vectors as:
+\begin{ea}
+	\cos\theta = \frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{a}||\mathbf{b}|}
+\end{ea}
+
+We can also prove vectors are parallel or perpendicular by dotting them and seeing if our results are the same as just multiplying their scalars, or zero, respectively.
+
+\subsubsection{Scalar product form of the equation of a plane}
+If a plane has a specific given point, position vector $\mathbf{a}$, and normal vector $\mathbf{n}$. The vector between a general point on the plane, position vector $\mathbf{r}$, and $\mathbf{a}$, is $\mathbf{r}-\mathbf{a}$, and is always perpendicular to $\mathbf{n}$. This means that we can define the equation of the plane with the dot product:
+\begin{ea}[rCl]
+	(\mathbf{r}-\mathbf{a}) \cdot \mathbf{n} & = & 0
+	\nonumber\\
+	\mathbf{r} \cdot \mathbf{n} & = & \mathbf{a} \cdot \mathbf{n}
+	\nonumber\\
+	\mathbf{r} \cdot \mathbf{n} & = & k
+\end{ea}
+Because $\mathbf{a}$ and $\mathbf{n}$ are known constants, so we can define $k$ as being their dot product. Expanding the dot product from this form of the equation, if $\mathbf{r}=\begin{pmatrix}x\\y\\z\end{pmatrix}$ and $\mathbf{a}=\begin{pmatrix}a\\b\\c\end{pmatrix}$ gives $ax+by+cz=k$, which is the same as the cartesian form for the equation of a plane, so this can be viewed as a derivation of that.
+
+\subsubsection{The cross product}
+The cross product isn't actually on the spec here, but it's extremely useful to know and can make working out many problems much quicker and easier. It's written as $\mathbf{a} \times \mathbf{b}$, and the result is a vector which is perpendicular to both $\mathbf{a}$ and $\mathbf{b}$.
+
+\subsubsection{Definition and computation of the cross product}
+The cross product of two vectors $\mathbf{v}=\begin{pmatrix}x\\y\\z\end{pmatrix}$, and $\mathbf{w}=\begin{pmatrix}a\\b\\c\end{pmatrix}$, is defined as $\begin{vmatrix}\mathbf{i} & \mathbf{j} & \mathbf{k}\\x & y & z \\ a & b & c\end{vmatrix}$.
+
+We can use the formula for the determinant of a 3x3 matrix to give us that this is equal to $\mathbf{i}(yc-zb)-\mathbf{j}(xc-za)+\mathbf{k}(xb-ya)$. Multiplying the middle term by $-1$ and putting it into vector form gives us the quickest way of remembering and working out the cross product, which is that:
+
+\begin{ea}
+	\begin{pmatrix}x\\y\\z\end{pmatrix} \times \begin{pmatrix}a\\b\\c\end{pmatrix}
+	= \begin{pmatrix}yc-bz\\az-xc\\xb-ay\end{pmatrix}
+\end{ea}
+
+Which can be thought of or remembered as going downwards, ignoring whichever row you're on, and for each doing the product of the leading diagonal minus the product of the other diagonal, only flipping which one is subtracted for the middle row. Dotting this resulting vector with the starting vectors gives zero for both, showing this does indeed give a vector perpendicular for both.
+
+\subsubsection{Uses of the cross product}
+One obvious use of the cross product is finding the normal vector of a plane when given its equation in vector form. Simply dot the two vectors that are in the plane and this gives a normal vector.
+
+\subsection{Angles between lines and planes}
+\subsubsection{Angles between two lines}
+Using the dot product as above, the angle between two vectors when they're both pointing outward is $\cos\theta = \frac{\mathbf{a} \cdot \mathbf{b}}{|a||b|}$. This can be done to the direction vectors of two lines. However, it isn't always guaranteed that this will be the acute angle between the lines. In order to guarantee this, modulus signs must be put around the entire thing, to ensure that $\cos\theta>=0$ and and so $\theta<\pi$: $\cos\theta = |\frac{\mathbf{a} \cdot \mathbf{b}}{|a||b|}|$. To get the obtuse angle, find the acute one and subtract from $2\pi$.
+
+\subsubsection{Angle between two planes}
+The angle between two planes works very similarly. If you have the normal vector of both of the planes, the acute angle between them will be the same as the acute angle between the planes themselves, and so the same method can be used.
+
+\subsubsection{Angles between lines and planes}
+For the angle between a line and a plane, construct a right-angled triangle between the plane, the plane's normal vector, and the line. The acute angle between the line and the normal vector, $\theta$, plus the angle we're looking for, $\alpha$, sum to 90\textdegree. We can therefore work it like that, or we can look at the right angled triangle to see that $\cos\theta = \sin\alpha$, (one is adjacent over hypotenuse, the other is opposite over hypotenuse, and here opposite and adjacent to these angles refer to the same side) and so do $\arcsin$ on the acute angle between the line and the normal vector to get our answer.
+
+\subsection{Points of intersection}
+\subsubsection{Determining whether two 3d lines intersect}
+To determine whether two lines in three dimensions intersect, the first thing to do is to write them both in vector form, combined into one vector. Then, they can be set equal, to give a system of three simultaneous equations in two unknowns. So for lines $\mathbf{r}=\begin{pmatrix}3\\1\\1\end{pmatrix}+\lambda\begin{pmatrix}1\\-2\\-1\end{pmatrix}$, and $\mathbf{r}=\begin{pmatrix}0\\-2\\3\end{pmatrix}+\mu\begin{pmatrix}-5\\1\\4\end{pmatrix}$, then we have:
+
+\begin{ea}[rCl]
+	\begin{pmatrix}3+\lambda\\1-2\lambda\\1-\lambda\end{pmatrix}
+	& = & \begin{pmatrix}-5\mu\\-2+\mu\\3+4\mu\end{pmatrix}
+	\nonumber\\
+	3+\lambda & = & -5\mu
+	\nonumber\\
+	1-2\lambda & = & -2+\mu
+	\nonumber\\
+	1-\lambda & = & 3+4\mu
+\end{ea}
+
+The next step is to try and solve two of the equations simultaneously. If there are no solutions, then the lines don't intersect. If there are solutions, then if they also work in the third equation then the lines do intersect. The values of $\lambda$ or $\mu$ can be substituted back into one of the lines' equations to find where.
+
+\subsubsection{Points of intersection between a line and a plane}
+To find the points of intersection between a line and a plane, then use the vector form equation of the line, and the scalar product form of the equation of the plane, and substitute the value for $\mathbf{r}$ from the line's equation into the plane's equation. Then, solve for $\lambda$, or whatever the parameter is, and substitute that back into the equation for the line to get where the intersection occurs.
+
+\subsubsection{Skew lines}
+Two 3d lines are skew if they don't cross, and they're also not parallel. To prove two lines are skew, first prove that they don't intersect. Then, show that their direction vectors aren't a scalar multiple of one another, which proves they must also not be parallel.
+
+\subsection{Perpendicular distances}
+\subsubsection{Perpendicular distance between a point and a line}
+To find the perpendicular distance from a point to a line, what's needed is to find the point on the line, where the vector from that point on the line to the point given is perpendicular to the direction vector of the line. If they're perpendicular, then they can be dotted to equal zero. So to find this point between point $(x, y, z)$ and line $\mathbf{r}=\begin{pmatrix}a_1+\lambda b_1\\a_2+\lambda b_2\\a_3+\lambda b_3\end{pmatrix}$, we get:
+
+\begin{ea}
+	\begin{pmatrix}a_1+\lambda b_1 - x\\a_2+\lambda b_2 - y\\a_3+\lambda b_3 - z\end{pmatrix} \cdot \begin{pmatrix}b_1\\b_2\\b_3\end{pmatrix} = 0
+\end{ea}
+
+This can be solved to give a value of $\lambda$, which substituted into the line's equation gives the point we were looking for. The distance between this point and the given one is then the perpendicular distance.
+
+\subsubsection{Perpendicular distance between two parallel lines}
+If two lines are parallel, then they have direction vectors that are the same. If they aren't given exactly the same (for example one might be a multiple of the other), it's acceptable and often makes the question easier to simply pick one and use it for both.
