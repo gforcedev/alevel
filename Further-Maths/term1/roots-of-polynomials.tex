@@ -106,3 +106,12 @@ In a cubic:
 \end{ea}
 
 This can be remembered as ``sum cubed minus three sum double (plus three triple for cubics)''.
+
+\subsection{Linear transformations of roots}
+One question that could be asked is, given one polynomial, to find the polynomial with roots which are linear transformations of the one given. Broadly, there are two ways to go about this.
+
+\subsubsection{Using sum, pair sum, etc}
+The first method is to relate the sums in order to find the coefficients of the new polynomail. For example given the polynomial $x^3-2x^2+3x-4=0$, roots $\alpha, \beta, \gamma$, then we know that $\alpha + \beta + \gamma=\frac{-b}{a}=2$. If we're trying to find the polynomial with roots $2\alpha, 2\beta, 2\gamma$, then the sum here would be $2(\alpha + \beta + \gamma)$, and so the coefficient of $x^2$ for our new polynomial would be twice that of the given one, meaning it would be $-4$. Repeating this process for the other coefficients would give the answer.
+
+\subsubsection{Using a new variable (substitution)}
+Another way of doing it which perhaps feels more brute-force like, is to use a new variable. If you've been given $f(x)$ such that $f(\alpha)=0$, and you're asked to find $g(w)$ such that $g(\alpha + 3) = 0$, then we can let $w=x+3$. This implies $x=w-3$, and then we can subsitute $(w-3)$ for $x$ in the original function, and then expand and simplify.
