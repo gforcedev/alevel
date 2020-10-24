@@ -165,5 +165,32 @@ To find the perpendicular distance from a point to a line, what's needed is to f
 
 This can be solved to give a value of $\lambda$, which substituted into the line's equation gives the point we were looking for. The distance between this point and the given one is then the perpendicular distance.
 
-\subsubsection{Perpendicular distance between two parallel lines}
-If two lines are parallel, then they have direction vectors that are the same. If they aren't given exactly the same (for example one might be a multiple of the other), it's acceptable and often makes the question easier to simply pick one and use it for both.
+\subsubsection{Perpendicular distance between two lines}
+If we let $A$ be a general point on the first line and $B$ be a general point on the second line, we can subtract one position vector from the other and end up with a vector in terms of the parameters, going between the two vectors. We can dot this with the direction vector of each line and set equal to zero, to give simultaneous equations to work out what the parameters should be.
+
+If the lines are parallel rather than skew, the direction vectors will be the same, or multiples of each other. This will mean that the perpendicular vector we're looking for will its $x$, $y$, and $z$ all in terms of the same expression of the two parameters, for example $\lambda - \mu$, and so we can let another variable (often $t$) equal that expression and solve for that instead.
+
+\subsubsection{Another way to get the perpendicular distance between the two lines}
+Another way to do this, and find the vector between two lines, involves vector projection. The projection of one vector onto another can be thought of as the parallel component of the first, relative to the second. So for example if projecting $\mathbf{a}$ onto $\mathbf{b}$, then think of $\mathbf{b}$ as the ground. The projection would be the shadow of $\mathbf{a}$ on the ground if the sun was directly overhead. To project one matrix onto another, you dot them and divide by the magnitude of the one you're projecting on to, so:
+\begin{ea}
+	\frac{\mathbf{a} \cdot \mathbf{b}}{|\mathbf{b}|}
+\end{ea}
+This gives the magnitude of the projected vector, which is a scalar. To get the actual projected vector, multiply by the one you were projecting onto and divide by its magnitude again (so like multiplying by its unit vector).
+
+This method is first of all to cross the two direction vectors, to get a vector parallel to both of them, $\mathbf{n}$. Then, to project any vector that goes between the lines, onto $\mathbf{n}$, to give you the vector you want, the magnitude of which is the shortest distance between the lines.
+
+\subsubsection{Perpendicular distance between a point and a plane}
+The perpendicular distance between a point and a plane is a line going through the point, parallel to the plane's normal vector. This can be thought of as the vector from the given point to a general point on the plane, projected onto the normal vector. So considering a plane $\mathbf{r} \cdot \mathbf{n}=k$, where $\mathbf{n}=\begin{pmatrix}a\\b\\c\end{pmatrix}$, and a given point position vector $\begin{pmatrix}x_1\\y_1\\z_1\end{pmatrix}$, we can define an arbitrary point on the plane with position vector $\mathbf{P}\begin{pmatrix}x\\y\\z\end{pmatrix}$. That means that the perpendicular distance is:
+\begin{ea}[rCl]
+	\left|\frac{\mathbf{n} \cdot \begin{pmatrix}x-x_1\\y-y_1\\z-z_1\end{pmatrix}}{|\mathbf{n}|}\right|
+	& = & \left|\frac{ax+by+cz-(ax_1+by_1+cz_1)}{|\mathbf{n}|}\right|
+	\nonumber\\
+	& = & \left|\frac{k-(ax_1+by_1+cz_1)}{|\mathbf{n}|}\right|
+\end{ea}
+Which can be computed as these are all known values. To get the vector rather than just the distance, multiply this by the unit normal vector as above.
+
+\subsubsection{Reflections of points in planes}
+To reflect a point in a plane, find the vector from the point to the plane, and add it on again to get the reflected point.
+
+\subsubsection{Reflections of lines in planes}
+To reflect a line in a plane, first find the point where the line intersects the plane. Then reflect any other point on the line, and work out the line between them.
