@@ -1,0 +1,24 @@
+\section{Volumes of revolution}
+\subsection{Volumes of revolution around the $x$-axis}
+Deriving the formula for volumes of revolution is similar to how it works for showing that integrating a curve gives the area beneath it. In short (and not at all rigorously), then the curve which is being rotated around the $x$-axis is split into infinitely small chunks, so that these chunks can simply be considered as lines. These lines are then the radii of circles, which means their area is $\pi r^2$. Expressing this in terms of a general function $y=f(x)$, split into chunks which are $\delta$ in width, rotated $2\pi$ radians around the $x$-axis gives us that:
+\begin{ea}[rCl]
+	\text{Volume} & = & \lim_{\delta_x \to 0}\sum{\pi y^2 \delta_x}
+	\nonumber\\
+	& = & \int^a_b{\pi y^2 dx}
+	\nonumber\\
+	& = & \pi\int^a_b{y^2 dx}
+\end{ea}
+
+Many different volume formulae, for example spheres and cylinders, can be derived this way.
+
+\subsection{Volumes of revolution around the $y$-axis}
+Around the $y$-axis, the process is extremely similar. Just instead, we make $x$ the subject and consider it as $x=f(y)$, and so get:
+\begin{ea}
+	\text{Volume} = \pi\int^a_b{x^2dy}
+\end{ea}
+
+\subsection{Combinations of volumes of revolution}
+Questions may require adding or subtracting different integrals to arrive at the required volume. A tip here is that often time can be saved by simply using the formulae for the area of a cylinder ($\pi r^2h$), or a cone ($\frac{1}{3}\pi r^2h$), instead of always integrating without checking whether it's already a shape you know. The knowledge required for these questions is relatively simple, but it's worth practicing examples to get faster and more accurate at them.
+
+\subsection{Modelling with volumes of revolution}
+Applying this to real-life scenarios is a common style of question. The important things to remember here are things like including units in answers. As for ``criticise the model'' questions, commonly answers will be to do with wasted material, or wasted space (air bubbles in moulds for example).
