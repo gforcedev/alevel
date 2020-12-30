@@ -1,0 +1,99 @@
+\section{Methods in calculus}
+\subsection{Improper integrals}
+Improper integrals have one or both limits as inifinite, or have a function that at some point in the range has an undefined value.
+
+\subsubsection{When one of the limits is infinite}
+If either one of the limits are infinite, we swap them out for another variable, and find the limit as that variable tends to infinity or minus infinity:
+\begin{ea}[rCl]
+	\int^{\infty}_{1}{x^{-3}}dx & = & \lim_{k \to \infty} \int^{k}_{1}{x^{-3}}dx
+	\nonumber\\
+								& = & \lim_{k \to \infty}\left[\frac{x^2}{-2}\right]^k_1
+	\nonumber\\
+								& = & \lim_{k \to \infty}\left(\frac{-1}{2k^2}-\frac{-1}{2}\right)
+	\nonumber\\
+								& = & \frac{1}{2}
+\end{ea}
+
+If this limit doesn't exist, the integral is said to be divergent. If it does, the integral is said to be convergent.
+
+\subsubsection{When both of the limits are infinite}
+If both of the limits are an integral are infinite (ie $\pm\infty$), then the improper integral is worked out by choosing any point on the range, and splitting the integral into two of the previous case around this point:
+\begin{ea}[rCl]
+	\int^{\infty}_{-\infty}f(x)dx & = & \lim_{a \to \infty} \left( \int^{a}_{0}f(x)dx\right) + \lim_{b \to -\infty} \left(\int^{0}_{b}f(x)dx\right)
+\end{ea}
+
+\subsubsection{When the function is undefined at a point on the range}
+If the function being integrated is undefined at a point on the range, then the integral is once again split into two separate integrals, around the point at which the function is undefined. So for example, from the lower limit to $x=3$, and then from $x=3$ to the upper limit, if the function is undefined at $x=3$.
+
+\subsection{Mean value of functions}
+One way to think about the mean value of a function, between two limits, is to take $n$ evenly spaced points on the graph between the limits, sum them, and divide by $n$. When $n$ is infinitely small, then the sum part is represented by integrating the function between the limits, and $n$, or the number being divided by, is represented by the width of the limits. So, the mean value of a function between limits $a$ and $b$ is given by:
+\begin{ea}[rCl]
+	\overline{f(x)} & = & \frac{\int^{b}_{a}f(x)dx}{b-a}
+\end{ea}
+
+This can be transformed to give some other useful results:
+\begin{ea}[rCl]
+	\overline{f(x+k)} & = & \overline{f(x)} + k
+	\\
+	\overline{kf(x)} & = & k \times \overline{f(x)}
+\end{ea}
+
+\subsection{Differentiation inverse trigonometric functions}
+To find the derivative of inverse trig functions, a method is to apply the normal trigonometric function to both sides, and then differentiate implicitly. Next, the resulting fraction can be rooted whilst the denominator and numerator are squared leaving the result the same, which allows use of $\cos^2\theta+\sin^2\theta\equiv 1$, and then substituting the original back in. So for finding $\frac{d}{dx}\left(\arcsin{x}\right)$:
+\begin{ea}[rCl]
+	\text{let } y & = & \arcsin{x}
+	\nonumber\\
+	\sin{y} & = & x
+	\nonumber\\
+	\frac{dy}{dx}\cos{y} & = & 1
+	\nonumber\\
+	\frac{dy}{dx} & = & \frac{1}{\cos{y}}
+	\nonumber\\
+				  & = & \sqrt{\frac{1^2}{\cos^2{y}}}
+	\nonumber\\
+				  & = & \frac{1}{\sqrt{1-\sin^2{y}}}
+	\nonumber\\
+				  & = & \frac{1}{\sqrt{1-x^2}}
+\end{ea}
+Since $x=\sin{y}$, we know it must be between -1 and 1 (not inclusive), and so we aren't dividing by zero.
+
+Going through the same sort of method gives that:
+\begin{ea}
+	\frac{d}{dx}(\arccos{x})=\frac{-1}{\sqrt{1-x^2}}
+\end{ea}
+
+A similar thing can be done with arctan, using $\sec^2{x}\equiv\tan^2{x}+1$ and not requiring squaring and rooting, to give that:
+\begin{ea}
+	\frac{d}{dx}(\arctan{x})=\frac{-1}{x^2+1}
+\end{ea}
+
+\subsection{Integrating with inverse trigonometric functions}
+A substitution can be used to integrate $\frac{1}{\sqrt{1-x^2}}$ (knowing that the correct result is $\sin x$). If we let $x=\sin\theta$, this implies that $dx=\cos\theta d\theta$ and $\theta=\arcsin x$:
+\begin{ea}[rCl]
+	\int \frac{1}{\sqrt{1-x^2}}dx & = & \int \frac{1}{\sqrt{1-x^2}} \cos\theta d\theta
+	\nonumber\\
+								  & = & \int \frac{1}{\sqrt{1-\sin^2\theta}} \cos\theta d\theta
+	\nonumber\\
+								  & = & \int \frac{1}{\sqrt{\cos^2\theta}} \cos\theta d\theta
+	\nonumber\\
+								  & = & \int 1 d\theta
+	\nonumber\\
+								  & = & \theta + c
+	\nonumber\\
+								  & = & \arcsin x + c
+\end{ea}
+
+This can be generalised with $a^2-x^2$ instead of $1-x^2$ to give that:
+\begin{ea}
+	\int \frac{1}{\sqrt{a^2-x^2}} dx = \arcsin \frac{x}{a} + c
+\end{ea}
+
+A similar technique can also be used to show that:
+\begin{ea}
+	\int \frac{1}{a^2+x^2} dx = \arctan \frac{x}{a} + c
+\end{ea}
+
+Both of these are in the formula booklet.
+
+\subsubsection{Integrations with partial fractions}
+Often, then integrations will require splitting into many different partial fractions. Some of these will be integrable into a ln, some into an arcsin or arctan, for example. There's no new content here, it's just combining already known techniques together in longer form questions.
